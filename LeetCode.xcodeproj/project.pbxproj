@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102B41F2080D673004ABC77 /* AddTwoNumbers_2.swift */; };
+		9102B4222080F196004ABC77 /* PalindromeNumber_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */; };
 		9175BC7D207F63E800934B4B /* Statistics.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9175BC77207F63E800934B4B /* Statistics.strings */; };
 		9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175BC7A207F63E800934B4B /* ReverseInteger_7.swift */; };
 		9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175BC7B207F63E800934B4B /* TwoSum_1.swift */; };
@@ -15,7 +16,8 @@
 
 /* Begin PBXFileReference section */
 		9102B41F2080D673004ABC77 /* AddTwoNumbers_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers_2.swift; sourceTree = "<group>"; };
-		913B4657207D38EF00A093AF /* LeetCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber_9.swift; sourceTree = "<group>"; };
+		913B4657207D38EF00A093AF /* LeetCode.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9175BC77207F63E800934B4B /* Statistics.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Statistics.strings; sourceTree = "<group>"; };
 		9175BC7A207F63E800934B4B /* ReverseInteger_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseInteger_7.swift; sourceTree = "<group>"; };
 		9175BC7B207F63E800934B4B /* TwoSum_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoSum_1.swift; sourceTree = "<group>"; };
@@ -53,7 +55,7 @@
 		913B4644207D38EE00A093AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				913B4657207D38EF00A093AF /* LeetCodeTests.xctest */,
+				913B4657207D38EF00A093AF /* LeetCode.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +75,7 @@
 			children = (
 				9175BC7B207F63E800934B4B /* TwoSum_1.swift */,
 				9175BC7A207F63E800934B4B /* ReverseInteger_7.swift */,
+				9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -80,9 +83,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		913B4656207D38EF00A093AF /* LeetCodeTests */ = {
+		913B4656207D38EF00A093AF /* LeetCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 913B4663207D38EF00A093AF /* Build configuration list for PBXNativeTarget "LeetCodeTests" */;
+			buildConfigurationList = 913B4663207D38EF00A093AF /* Build configuration list for PBXNativeTarget "LeetCode" */;
 			buildPhases = (
 				913B4653207D38EF00A093AF /* Sources */,
 				913B4654207D38EF00A093AF /* Frameworks */,
@@ -92,9 +95,9 @@
 			);
 			dependencies = (
 			);
-			name = LeetCodeTests;
+			name = LeetCode;
 			productName = LeetCodeTests;
-			productReference = 913B4657207D38EF00A093AF /* LeetCodeTests.xctest */;
+			productReference = 913B4657207D38EF00A093AF /* LeetCode.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -126,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				913B4656207D38EF00A093AF /* LeetCodeTests */,
+				913B4656207D38EF00A093AF /* LeetCode */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +153,7 @@
 				9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */,
 				9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */,
 				9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */,
+				9102B4222080F196004ABC77 /* PalindromeNumber_9.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		913B4663207D38EF00A093AF /* Build configuration list for PBXNativeTarget "LeetCodeTests" */ = {
+		913B4663207D38EF00A093AF /* Build configuration list for PBXNativeTarget "LeetCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				913B4664207D38EF00A093AF /* Debug */,

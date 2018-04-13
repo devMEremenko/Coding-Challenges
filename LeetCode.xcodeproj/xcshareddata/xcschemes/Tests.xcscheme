@@ -18,8 +18,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "913B4656207D38EF00A093AF"
-               BuildableName = "LeetCodeTests.xctest"
-               BlueprintName = "LeetCodeTests"
+               BuildableName = "LeetCode.xctest"
+               BlueprintName = "LeetCode"
                ReferencedContainer = "container:LeetCode.xcodeproj">
             </BuildableReference>
          </TestableReference>
