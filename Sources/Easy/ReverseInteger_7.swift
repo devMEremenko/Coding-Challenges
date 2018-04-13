@@ -35,7 +35,6 @@ class ReverseInteger_7: XCTestCase {
         XCTAssert(reverseUsingString(5352) == 2535)
         XCTAssert(reverseUsingString(1534236469) == 0)
         
-        
         XCTAssert(reverse(123) == 321)
         XCTAssert(reverse(-538) == -835)
         XCTAssert(reverse(5352) == 2535)
