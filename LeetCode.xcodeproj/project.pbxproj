@@ -48,6 +48,7 @@
 			children = (
 				9175BC78207F63E800934B4B /* Sources */,
 				9175BC77207F63E800934B4B /* Statistics.strings */,
+				9175BC7C207F63E800934B4B /* Info.plist */,
 				913B4644207D38EE00A093AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +66,6 @@
 			children = (
 				9175BC79207F63E800934B4B /* Easy */,
 				9102B41E2080D673004ABC77 /* Medium */,
-				9175BC7C207F63E800934B4B /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
