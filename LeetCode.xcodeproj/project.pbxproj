@@ -12,6 +12,8 @@
 		9175BC7D207F63E800934B4B /* Statistics.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9175BC77207F63E800934B4B /* Statistics.strings */; };
 		9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175BC7A207F63E800934B4B /* ReverseInteger_7.swift */; };
 		9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175BC7B207F63E800934B4B /* TwoSum_1.swift */; };
+		91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */; };
+		91AE83AC2084FA6800DCADDF /* RomanToInteger_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9175BC7A207F63E800934B4B /* ReverseInteger_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseInteger_7.swift; sourceTree = "<group>"; };
 		9175BC7B207F63E800934B4B /* TwoSum_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoSum_1.swift; sourceTree = "<group>"; };
 		9175BC7C207F63E800934B4B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyContests80.swift; sourceTree = "<group>"; };
+		91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanToInteger_13.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		9175BC78207F63E800934B4B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				91AE83A82084CB8600DCADDF /* WeeklyContests */,
 				9175BC79207F63E800934B4B /* Easy */,
 				9102B41E2080D673004ABC77 /* Medium */,
 			);
@@ -76,8 +81,17 @@
 				9175BC7B207F63E800934B4B /* TwoSum_1.swift */,
 				9175BC7A207F63E800934B4B /* ReverseInteger_7.swift */,
 				9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */,
+				91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */,
 			);
 			path = Easy;
+			sourceTree = "<group>";
+		};
+		91AE83A82084CB8600DCADDF /* WeeklyContests */ = {
+			isa = PBXGroup;
+			children = (
+				91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */,
+			);
+			path = WeeklyContests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */,
+				91AE83AC2084FA6800DCADDF /* RomanToInteger_13.swift in Sources */,
+				91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */,
 				9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */,
 				9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */,
 				9102B4222080F196004ABC77 /* PalindromeNumber_9.swift in Sources */,
@@ -279,7 +295,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +314,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
