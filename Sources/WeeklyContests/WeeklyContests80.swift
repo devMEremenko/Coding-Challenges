@@ -102,11 +102,3 @@ class WeeklyContests80: XCTestCase {
         return ""
     }
 }
-
-extension Dictionary where Value: Equatable {
-    
-    func key(for value: Value) -> [Key] {
-        //ATTENTION: use flatMap if you compile it with LeetCode
-        return compactMap({ return $0.value == value ? $0.key : nil })
-    }
-}

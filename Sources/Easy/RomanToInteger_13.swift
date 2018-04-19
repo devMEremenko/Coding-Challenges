@@ -70,14 +70,7 @@ class RomanToInteger_13: XCTestCase {
     }
 }
 
-extension String {
-    
-    subscript (idx: Int) -> Character {
-        return self[index(startIndex, offsetBy: idx)]
-    }
-}
-
-extension Character {
+private extension Character {
     
     var number: Int {
         switch self {
