@@ -50,118 +50,65 @@ class HastSetTest: XCTestCase {
 
 private struct HashSet<Value: Hashable> {
     
-    private var buckets = [LinkedList<Value>?]()
+    typealias Bucket = List<Value>
+    private var buckets: [Bucket]
+    
+    init() {
+        self.init(capacity: 17)
+    }
     
     init(capacity: Int = 17) {
         let adjustedCapacity = capacity > 0 ? capacity : 17
-        buckets = Array(repeating: nil, count: adjustedCapacity)
+        buckets = Array()
+        buckets.reserveCapacity(adjustedCapacity)
     }
     
     /// The number of buckets should be increased when 2/3 of the HashTable is filled.
     mutating func add(_ value: Value) {
+        let bucket = findOrCreateBucket(value)
         
-        let index = _index(value)
-        
-        guard let bucket = buckets[index] else {
-            let bucket = LinkedList<Value>()
-            bucket.append(value: value)
-            buckets[index] = bucket
-            return
+        if !bucket.contains({ $0 == value }) {
+            bucket.append(value)
         }
-        bucket.append(value: value)
     }
     
     func contains(_ value: Value) -> Bool {
-        guard let bucket = buckets[_index(value)] else { return false }
-        return bucket.contains(value: value)
+        guard let bucket = findBucket(value) else { return false }
+        return bucket.contains({ $0 == value })
     }
     
     func remove(_ value: Value) {
-        guard let bucket = buckets[_index(value)] else { return }
-        bucket.remove(value: value)
+        let bucket = findBucket(value)
+        bucket?.remove({ $0 == value })
     }
 }
 
 private extension HashSet {
     
-    @inline(__always) func _index(_ value: Value) -> Int {
-        return abs(value.hashValue) % buckets.count
+    @inline(__always) mutating func findOrCreateBucket(_ value: Value) -> Bucket {
+        guard let bucket = findBucket(value) else {
+            let newBucket = List<Value>()
+            buckets.insert(newBucket, at: _findIndex(value))
+            return newBucket
+        }
+        return bucket
+    }
+    
+    @inline(__always) func findBucket(_ value: Value) -> Bucket? {
+        let index = _findIndex(value)
+        guard isValid(index) else { return nil }
+        return buckets[index]
+    }
+    
+    @inline(__always) func _findIndex(_ value: Value) -> Int {
+        let hash = abs(value.hashValue)
+        guard hash != 0 else { return 0 }
+        guard buckets.count != 0 else { return 0 }
+        return hash % buckets.count
+    }
+    
+    @inline(__always) func isValid(_ index: Int) -> Bool {
+        return index >= 0 && index < buckets.count
     }
 }
 
-
-private class LinkedList<T: Equatable> {
-    
-    public class LinkedListNode<T> {
-        var value: T
-        var next: LinkedListNode?
-        weak var previous: LinkedListNode?
-        
-        public init(value: T) {
-            self.value = value
-        }
-    }
-    
-    public typealias Node = LinkedListNode<T>
-    
-    private var head: Node?
-    
-    public var isEmpty: Bool {
-        return head == nil
-    }
-    
-    public var first: Node? {
-        return head
-    }
-    
-    public var last: Node? {
-        guard var node = head else {
-            return nil
-        }
-        
-        while let next = node.next {
-            node = next
-        }
-        return node
-    }
-    
-    public func contains(value: T) -> Bool {
-        var temp = head
-        while temp != nil {
-            if temp?.value == value {
-                return true
-            }
-            temp = temp?.next
-        }
-        return false
-    }
-    
-    public func append(value: T) {
-        let newNode = Node(value: value)
-        if let lastNode = last {
-            newNode.previous = lastNode
-            lastNode.next = newNode
-        } else {
-            head = newNode
-        }
-    }
-    
-    public func remove(value: T) {
-        
-        while head?.value == value {
-            head = head?.next
-        }
-        
-        var temp = head
-        var previous: Node? = nil
-        
-        while temp != nil {
-            if temp?.value == value {
-                previous?.next = temp?.next
-                break
-            }
-            previous = temp
-            temp = temp?.next
-        }
-    }
-}

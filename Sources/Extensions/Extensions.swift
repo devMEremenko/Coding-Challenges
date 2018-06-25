@@ -22,6 +22,7 @@ public extension String {
         guard let _toIndex = index(startIndex, offsetBy: from + to, limitedBy: endIndex) else {
             return nil
         }
+        
         return String(self[_fromIndex..._toIndex])
     }
 }
@@ -29,9 +30,21 @@ public extension String {
 public extension String {
     
     subscript (idx: Int) -> Character {
-        return self[index(startIndex, offsetBy: idx)]
+        get {
+            return self[index(startIndex, offsetBy: idx)]
+        }
     }
 }
+
+public extension Substring {
+    
+    subscript (idx: Int) -> Character {
+        get {
+            return self[index(startIndex, offsetBy: idx)]
+        }
+    }
+}
+
 
 //MARK: - Dictionary
 
