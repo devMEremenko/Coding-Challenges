@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102B41F2080D673004ABC77 /* AddTwoNumbers_2.swift */; };
 		9102B4222080F196004ABC77 /* PalindromeNumber_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */; };
+		91301ACA20ED2EBB003B4FC0 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301AC920ED2EBB003B4FC0 /* Merge.swift */; };
+		91301ACC20F2550F003B4FC0 /* Counting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301ACB20F2550F003B4FC0 /* Counting.swift */; };
 		9139FA6B208752EA00229150 /* LongestCommonPrefix_14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9139FA6A208752EA00229150 /* LongestCommonPrefix_14.swift */; };
 		9139FA6E2088CA9200229150 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9139FA6D2088CA9200229150 /* Extensions.swift */; };
 		916B88AB20BD7C1700BA92DF /* FindFibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B88AA20BD7C1700BA92DF /* FindFibonacciNumber.swift */; };
@@ -18,6 +20,7 @@
 		9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175BC7B207F63E800934B4B /* TwoSum_1.swift */; };
 		9193B18D209335E4000240A1 /* HashMap+OpenAddressing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9193B18C209335E4000240A1 /* HashMap+OpenAddressing.swift */; };
 		919C8B2B20E18356006EE57D /* WeeklyContests90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C8B2A20E18356006EE57D /* WeeklyContests90.swift */; };
+		919C8B2F20E1CAB3006EE57D /* PrintAllSubsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C8B2E20E1CAB3006EE57D /* PrintAllSubsets.swift */; };
 		91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */; };
 		91AE83AC2084FA6800DCADDF /* RomanToInteger_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */; };
 		91B61D7320D944520026809E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7220D944520026809E /* List.swift */; };
@@ -28,11 +31,14 @@
 		91D71A4D20D12B6100709547 /* OwnStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D71A4C20D12B6100709547 /* OwnStack.swift */; };
 		91D9EF4B2091E69700969B6D /* HastSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9EF4A2091E69700969B6D /* HastSet.swift */; };
 		91D9EF4D209204C800969B6D /* HashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9EF4C209204C800969B6D /* HashMap.swift */; };
+		91DA0BBB20E96D57008BC259 /* Quick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DA0BBA20E96D57008BC259 /* Quick.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9102B41F2080D673004ABC77 /* AddTwoNumbers_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers_2.swift; sourceTree = "<group>"; };
 		9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber_9.swift; sourceTree = "<group>"; };
+		91301AC920ED2EBB003B4FC0 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
+		91301ACB20F2550F003B4FC0 /* Counting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counting.swift; sourceTree = "<group>"; };
 		9139FA6A208752EA00229150 /* LongestCommonPrefix_14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestCommonPrefix_14.swift; sourceTree = "<group>"; };
 		9139FA6D2088CA9200229150 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		913B4657207D38EF00A093AF /* LeetCode.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +50,7 @@
 		9175BC7C207F63E800934B4B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9193B18C209335E4000240A1 /* HashMap+OpenAddressing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HashMap+OpenAddressing.swift"; sourceTree = "<group>"; };
 		919C8B2A20E18356006EE57D /* WeeklyContests90.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyContests90.swift; sourceTree = "<group>"; };
+		919C8B2E20E1CAB3006EE57D /* PrintAllSubsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintAllSubsets.swift; sourceTree = "<group>"; };
 		91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyContests80.swift; sourceTree = "<group>"; };
 		91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanToInteger_13.swift; sourceTree = "<group>"; };
 		91B61D7220D944520026809E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
@@ -54,6 +61,7 @@
 		91D71A4C20D12B6100709547 /* OwnStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnStack.swift; sourceTree = "<group>"; };
 		91D9EF4A2091E69700969B6D /* HastSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastSet.swift; sourceTree = "<group>"; };
 		91D9EF4C209204C800969B6D /* HashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMap.swift; sourceTree = "<group>"; };
+		91DA0BBA20E96D57008BC259 /* Quick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,7 @@
 				9102B41E2080D673004ABC77 /* Medium */,
 				91AE83A82084CB8600DCADDF /* WeeklyContests */,
 				910A8042209EF1BF006AF346 /* DataStructure */,
+				91DA0BB920E96D3A008BC259 /* Sort */,
 				916B88A920BD7BE600BA92DF /* Stepik */,
 				91B61D7C20DA5F3A0026809E /* MyCodeSchool */,
 				9139FA6C2088CA7B00229150 /* Extensions */,
@@ -188,8 +197,19 @@
 			isa = PBXGroup;
 			children = (
 				91B61D7D20DA5F6F0026809E /* ReverseString.swift */,
+				919C8B2E20E1CAB3006EE57D /* PrintAllSubsets.swift */,
 			);
 			path = MyCodeSchool;
+			sourceTree = "<group>";
+		};
+		91DA0BB920E96D3A008BC259 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				91DA0BBA20E96D57008BC259 /* Quick.swift */,
+				91301AC920ED2EBB003B4FC0 /* Merge.swift */,
+				91301ACB20F2550F003B4FC0 /* Counting.swift */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91301ACC20F2550F003B4FC0 /* Counting.swift in Sources */,
 				91B61D7620D944F40026809E /* Stack+Tests.swift in Sources */,
+				91DA0BBB20E96D57008BC259 /* Quick.swift in Sources */,
 				916B88AD20BEC7BE00BA92DF /* IsFibonacciNumber.swift in Sources */,
 				919C8B2B20E18356006EE57D /* WeeklyContests90.swift in Sources */,
 				9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */,
@@ -274,10 +296,12 @@
 				9139FA6E2088CA9200229150 /* Extensions.swift in Sources */,
 				91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */,
 				9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */,
+				919C8B2F20E1CAB3006EE57D /* PrintAllSubsets.swift in Sources */,
 				91B61D7320D944520026809E /* List.swift in Sources */,
 				91D9EF4B2091E69700969B6D /* HastSet.swift in Sources */,
 				9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */,
 				916B88AB20BD7C1700BA92DF /* FindFibonacciNumber.swift in Sources */,
+				91301ACA20ED2EBB003B4FC0 /* Merge.swift in Sources */,
 				91B61D7B20D94AA40026809E /* LinkedList+Tests.swift in Sources */,
 				91D9EF4D209204C800969B6D /* HashMap.swift in Sources */,
 				9193B18D209335E4000240A1 /* HashMap+OpenAddressing.swift in Sources */,
