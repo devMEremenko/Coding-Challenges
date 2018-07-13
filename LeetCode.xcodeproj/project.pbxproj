@@ -28,6 +28,7 @@
 		91B61D7820D9455D0026809E /* Stack+BasedOnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7720D9455D0026809E /* Stack+BasedOnArray.swift */; };
 		91B61D7B20D94AA40026809E /* LinkedList+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7A20D94AA40026809E /* LinkedList+Tests.swift */; };
 		91B61D7E20DA5F6F0026809E /* ReverseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7D20DA5F6F0026809E /* ReverseString.swift */; };
+		91BC7F1A20F7731400FDB1AE /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC7F1920F7731400FDB1AE /* Heap.swift */; };
 		91D71A4D20D12B6100709547 /* OwnStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D71A4C20D12B6100709547 /* OwnStack.swift */; };
 		91D9EF4B2091E69700969B6D /* HastSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9EF4A2091E69700969B6D /* HastSet.swift */; };
 		91D9EF4D209204C800969B6D /* HashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9EF4C209204C800969B6D /* HashMap.swift */; };
@@ -58,6 +59,7 @@
 		91B61D7720D9455D0026809E /* Stack+BasedOnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stack+BasedOnArray.swift"; sourceTree = "<group>"; };
 		91B61D7A20D94AA40026809E /* LinkedList+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinkedList+Tests.swift"; sourceTree = "<group>"; };
 		91B61D7D20DA5F6F0026809E /* ReverseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseString.swift; sourceTree = "<group>"; };
+		91BC7F1920F7731400FDB1AE /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		91D71A4C20D12B6100709547 /* OwnStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnStack.swift; sourceTree = "<group>"; };
 		91D9EF4A2091E69700969B6D /* HastSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastSet.swift; sourceTree = "<group>"; };
 		91D9EF4C209204C800969B6D /* HashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMap.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		910A8042209EF1BF006AF346 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				91BC7F1B20F8F11300FDB1AE /* Heap */,
 				91B61D7420D944E70026809E /* Stack */,
 				91B61D7920D94A960026809E /* LinkedList */,
 				910A8043209EF1EC006AF346 /* HashTable */,
@@ -202,6 +205,14 @@
 			path = MyCodeSchool;
 			sourceTree = "<group>";
 		};
+		91BC7F1B20F8F11300FDB1AE /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				91BC7F1920F7731400FDB1AE /* Heap.swift */,
+			);
+			path = Heap;
+			sourceTree = "<group>";
+		};
 		91DA0BB920E96D3A008BC259 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +314,7 @@
 				916B88AB20BD7C1700BA92DF /* FindFibonacciNumber.swift in Sources */,
 				91301ACA20ED2EBB003B4FC0 /* Merge.swift in Sources */,
 				91B61D7B20D94AA40026809E /* LinkedList+Tests.swift in Sources */,
+				91BC7F1A20F7731400FDB1AE /* Heap.swift in Sources */,
 				91D9EF4D209204C800969B6D /* HashMap.swift in Sources */,
 				9193B18D209335E4000240A1 /* HashMap+OpenAddressing.swift in Sources */,
 				9102B4222080F196004ABC77 /* PalindromeNumber_9.swift in Sources */,
