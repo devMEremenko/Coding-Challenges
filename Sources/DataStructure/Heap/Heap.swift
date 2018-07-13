@@ -330,3 +330,33 @@ extension Heap {
         return rightChildIndex(parentIndex) < nodes.count
     }
 }
+
+extension Heap: Sequence {
+    
+    //TODO: Iterate without removing items from a heap
+    //Hint: Search for all max/min items
+    
+    func makeIterator() -> AnyIterator<T> {
+        return AnyIterator<T> {
+            return self.poll()
+        }
+    }
+}
+
+extension Heap {
+    
+    //TODO: Iterate without removing items from a heap
+    //Hint: Search for all max/min items
+    
+    func map<M>(_ mapping: (T) -> (M)) -> [M] {
+        
+        var result = [M]()
+        result.reserveCapacity(nodes.count)
+        
+        for item in self {
+            result.append(mapping(item))
+        }
+        
+        return result
+    }
+}
