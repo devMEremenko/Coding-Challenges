@@ -250,7 +250,7 @@ private extension Heap {
                 break
             }
 
-            /// Solution for single Min / Max heap
+            /// Solution for a single Min / Max heap
             /*
             if hasRightChild(at: parentIndex) && rightChild(parentIndex) < leftChild(parentIndex) {
                 minIndex = rightChildIndex(parentIndex)
@@ -275,7 +275,7 @@ private extension Heap {
         
         var childIndex = nodes.count - 1
         
-        /// Solution for single Min / Max heap
+        /// Solution for a single Min / Max heap
         /// parent(childIndex) >= nodes[childIndex]
         
         while hasParent(for: childIndex) && sort(nodes[childIndex], parent(childIndex)) {
