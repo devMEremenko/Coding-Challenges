@@ -184,8 +184,17 @@ class Heap<T> {
     
     init(sort: @escaping Sort, array: [T]) {
         self.sort = sort
+        self.nodes = array
         
-        nodes = array
+        /// This is known as Floyd's algorithm and only takes O(n) time.
+        ///
+        /// We walking backwards through this array, starting at the first non-leaf node,
+        /// and call shiftDown().
+        ///
+        /// Can cause a large number of cache misses once the size of the data exceeds
+        /// that of the CPU cache.
+        ///
+        /// https://en.wikipedia.org/wiki/CPU_cache#CACHE-MISS
         
         let middleIndex = array.count / 2 - 1
         for i in stride(from: middleIndex, through: 0, by: -1) {
