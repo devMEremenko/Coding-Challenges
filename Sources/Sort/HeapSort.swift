@@ -10,15 +10,30 @@ import XCTest
 
 class HeapSortExample: XCTestCase {
     
-    func test() {
+}
+
+extension HeapSortExample {
+    
+    func testHeapSort() {
+        
+    }
+    
+    func heapSort(_ arr: [Int]) {
+        
+    }
+}
+
+extension HeapSortExample {
+    
+    func testUsingHeapDataStructure() {
         
         let source = [4, 2, 1, 5, 1, 5, 2, 5, 1, 6]
         
-        XCTAssert(heapSort(source, sort: <) == source.sorted())
-        XCTAssert(heapSort(source, sort: >) == source.sorted(by: >))
+        XCTAssert(usingHeapSortDS(source, sort: <) == source.sorted())
+        XCTAssert(usingHeapSortDS(source, sort: >) == source.sorted(by: >))
     }
     
-    func heapSort(_ arr: [Int], sort: @escaping Heap<Int>.Sort) -> [Int] {
-        return Heap<Int>(sort: sort, array: arr).map({ $0 })
+    func usingHeapSortDS<T>(_ arr: [T], sort: @escaping Heap<T>.Sort) -> [T] {
+        return Heap<T>(sort: sort, array: arr).map({ $0 })
     }
 }
