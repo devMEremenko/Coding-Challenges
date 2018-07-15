@@ -241,7 +241,7 @@ private extension Heap {
         
         while hasLeftChild(at: parentIndex) {
             
-            var minIndex = parentIndex
+            var minIndex = leftChildIndex(parentIndex)
             
             if sort(leftChild(parentIndex), nodes[parentIndex]) {
                 minIndex = leftChildIndex(parentIndex)
