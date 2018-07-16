@@ -51,7 +51,9 @@ class FindKthMinItemTest: XCTestCase {
             shiftDown(&arr, from: parentIdx, k)
         }
         
-        /// If an item (k..<count) is smaller than root -> set it as a root and heapify()
+        /// If an item (in a range k..<count) is smaller than root
+        /// set it as a root and heapify()
+        
         for idx in k..<arr.count {
             if arr[idx] < arr[0] {
                 arr.swapAt(0, idx)
