@@ -1,47 +1,65 @@
 //
-//  HeapSort.swift
+//  FindKthMinItem.swift
 //  LeetCode
 //
-//  Created by Maxim Eremenko on 7/13/18.
+//  Created by Maxim Eremenko on 7/16/18.
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.
 //
 
 import XCTest
 
-class HeapSortExample: XCTestCase {
+class FindKthMinItemTest: XCTestCase {
     
-    var values: [Int] {
-        return [1, 5, 2, 5, 8, 3, 9, 1, 104, 0, 1, 4, 70, 41, 94, 3, 4, 28, 1, 7, 3, 2, 1, 3, 4, 5, 1]
-    }
-}
-
-extension HeapSortExample {
-    
-    func testHeapSort() {
+    func testSimple() {
         
-        var toSort = values
+        var values = [4, 1, 3, 5, 2]
         
-        heapSort(&toSort)
+        ///       4
+        ///      / \
+        ///     2   3
+        ///    /
+        ///   1
         
-        XCTAssert(toSort == values.sorted())
+        XCTAssert(findKthMinItem(&values, 4) == 4)
     }
     
-    func heapSort(_ arr: inout [Int]) {
+    func testComplex() {
         
-        guard arr.count > 1 else { return }
+        var values = [4, 8, 6, 29, 1, 689, 9, 4, 1, 1, 35, 3, 3, 3, 1, 9, 20]
         
-        /// Create a max heap
-        for i in stride(from: arr.count / 2 - 1, through: 0, by: -1) {
-            shiftDown(&arr, from: i)
+        XCTAssert(findKthMinItem(&values, 1) == 1)
+        XCTAssert(findKthMinItem(&values, 2) == 1)
+        XCTAssert(findKthMinItem(&values, 3) == 1)
+        XCTAssert(findKthMinItem(&values, 4) == 1)
+        XCTAssert(findKthMinItem(&values, 5) == 3)
+        XCTAssert(findKthMinItem(&values, 6) == 3)
+        XCTAssert(findKthMinItem(&values, 7) == 3)
+        XCTAssert(findKthMinItem(&values, 8) == 4)
+        XCTAssert(findKthMinItem(&values, 9) == 4)
+        XCTAssert(findKthMinItem(&values, 10) == 6)
+    }
+    
+    /// Complexity: O(k + (n-k) * log(k))
+    
+    func findKthMinItem(_ arr: inout [Int], _ k: Int) -> Int? {
+        
+        guard k > 0 else { return nil }
+        guard arr.count >= k else { return nil }
+        
+        /// Build a max heap
+        for parentIdx in stride(from: arr.count / 2 - 1, through: 0, by: -1) {
+            shiftDown(&arr, from: parentIdx, k)
         }
         
-        /// Sort: decrease `arrCount` and shift down to the max heap
-        for arrCount in stride(from: arr.count - 1, through: 0, by: -1) {
-            arr.swapAt(0, arrCount)
-            
-            /// Create a max heap
-            shiftDown(&arr, from: 0, arrCount)
+        /// If an item (k..<count) is smaller than root -> set it as a root and heapify()
+        for idx in k..<arr.count {
+            if arr[idx] < arr[0] {
+                arr.swapAt(0, idx)
+                shiftDown(&arr, from: 0, k)
+            }
         }
+        
+        return arr.first
     }
     
     func shiftDown(_ arr: inout [Int], from idx: Int, _ toIdx: Int? = nil) {
@@ -87,20 +105,5 @@ extension HeapSortExample {
     
     @inline(__always) func rightChildIndex(_ parentIndex: Int) -> Int {
         return (2 * parentIndex) + 2
-    }
-}
-
-extension HeapSortExample {
-    
-    func testUsingHeapDataStructure() {
-        
-        let source = [4, 2, 1, 5, 1, 5, 2, 5, 1, 6]
-        
-        XCTAssert(usingHeapSortDS(source, sort: <) == source.sorted())
-        XCTAssert(usingHeapSortDS(source, sort: >) == source.sorted(by: >))
-    }
-    
-    func usingHeapSortDS<T>(_ arr: [T], sort: @escaping Heap<T>.Sort) -> [T] {
-        return Heap<T>(sort: sort, array: arr).map({ $0 })
     }
 }

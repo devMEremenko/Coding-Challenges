@@ -13,6 +13,7 @@
 		91301ACC20F2550F003B4FC0 /* Counting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301ACB20F2550F003B4FC0 /* Counting.swift */; };
 		9139FA6B208752EA00229150 /* LongestCommonPrefix_14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9139FA6A208752EA00229150 /* LongestCommonPrefix_14.swift */; };
 		9139FA6E2088CA9200229150 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9139FA6D2088CA9200229150 /* Extensions.swift */; };
+		914DF20820FCE4A9001E9551 /* FindKthMinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF20720FCE4A9001E9551 /* FindKthMinItem.swift */; };
 		916B88AB20BD7C1700BA92DF /* FindFibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B88AA20BD7C1700BA92DF /* FindFibonacciNumber.swift */; };
 		916B88AD20BEC7BE00BA92DF /* IsFibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B88AC20BEC7BE00BA92DF /* IsFibonacciNumber.swift */; };
 		9175BC7D207F63E800934B4B /* Statistics.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9175BC77207F63E800934B4B /* Statistics.strings */; };
@@ -46,6 +47,7 @@
 		9139FA6A208752EA00229150 /* LongestCommonPrefix_14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestCommonPrefix_14.swift; sourceTree = "<group>"; };
 		9139FA6D2088CA9200229150 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		913B4657207D38EF00A093AF /* LeetCode.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		914DF20720FCE4A9001E9551 /* FindKthMinItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindKthMinItem.swift; sourceTree = "<group>"; };
 		916B88AA20BD7C1700BA92DF /* FindFibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFibonacciNumber.swift; sourceTree = "<group>"; };
 		916B88AC20BEC7BE00BA92DF /* IsFibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsFibonacciNumber.swift; sourceTree = "<group>"; };
 		9175BC77207F63E800934B4B /* Statistics.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Statistics.strings; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */,
 				91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */,
 				9139FA6A208752EA00229150 /* LongestCommonPrefix_14.swift */,
+				914DF20720FCE4A9001E9551 /* FindKthMinItem.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			files = (
 				91301ACC20F2550F003B4FC0 /* Counting.swift in Sources */,
 				91B61D7620D944F40026809E /* Stack+Tests.swift in Sources */,
+				914DF20820FCE4A9001E9551 /* FindKthMinItem.swift in Sources */,
 				91DA0BBB20E96D57008BC259 /* Quick.swift in Sources */,
 				916B88AD20BEC7BE00BA92DF /* IsFibonacciNumber.swift in Sources */,
 				919C8B2B20E18356006EE57D /* WeeklyContests90.swift in Sources */,
