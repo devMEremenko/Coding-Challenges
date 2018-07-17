@@ -10,7 +10,7 @@ import XCTest
 
 class KMP_Algorithm: XCTestCase {
     
-    func test() {
+    func testKMP() {
         
     }
     
