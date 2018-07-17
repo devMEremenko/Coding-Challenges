@@ -52,7 +52,7 @@ class FindKthMinItemTest: XCTestCase {
         }
         
         /// If an item (in a range k..<count) is smaller than root
-        /// set it as a root and heapify()
+        /// set it as a root and heapify() down
         
         for idx in k..<arr.count {
             if arr[idx] < arr[0] {
