@@ -64,6 +64,18 @@ struct BSTDictionary<Key: Comparable, Value> {
             block(key, value)
             right?.inOrder(block)
         }
+        
+        var description: String {
+            var s = ""
+            if let left = left {
+                s += "(\(left.description)) <- "
+            }
+            s += "\(value)" + " \(key)"
+            if let right = right {
+                s += " -> (\(right.description))"
+            }
+            return s
+        }
     }
 }
 
@@ -128,11 +140,6 @@ extension BSTDictionary {
         maxNode.right = node.right
         return maxNode /// maxNode will become a new parent
     }
-    
-    private func max(node: Node) -> Node {
-        guard let maxNode = node.right else { return node }
-        return max(node: maxNode)
-    }
 }
 
 extension BSTDictionary {
@@ -149,6 +156,14 @@ extension BSTDictionary {
             }
         }
     }
+    
+    private func max(node: Node) -> Node {
+        var maximum = node
+        while let next = maximum.right {
+            maximum = next
+        }
+        return maximum
+    }
 }
 
 extension BSTDictionary {
@@ -157,5 +172,12 @@ extension BSTDictionary {
     
     func inOrder(_ block: Traverse) {
         root?.inOrder(block)
+    }
+}
+
+extension BSTDictionary: CustomStringConvertible {
+    
+    var description: String {
+        return root?.description ?? ""
     }
 }

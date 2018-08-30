@@ -31,7 +31,6 @@
 		91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */; };
 		91AE83AC2084FA6800DCADDF /* RomanToInteger_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */; };
 		91B61D7320D944520026809E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7220D944520026809E /* List.swift */; };
-		91B61D7620D944F40026809E /* Stack+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7520D944F40026809E /* Stack+Tests.swift */; };
 		91B61D7820D9455D0026809E /* Stack+BasedOnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7720D9455D0026809E /* Stack+BasedOnArray.swift */; };
 		91B61D7B20D94AA40026809E /* LinkedList+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7A20D94AA40026809E /* LinkedList+Tests.swift */; };
 		91B61D7E20DA5F6F0026809E /* ReverseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7D20DA5F6F0026809E /* ReverseString.swift */; };
@@ -72,7 +71,6 @@
 		91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyContests80.swift; sourceTree = "<group>"; };
 		91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanToInteger_13.swift; sourceTree = "<group>"; };
 		91B61D7220D944520026809E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		91B61D7520D944F40026809E /* Stack+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stack+Tests.swift"; sourceTree = "<group>"; };
 		91B61D7720D9455D0026809E /* Stack+BasedOnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stack+BasedOnArray.swift"; sourceTree = "<group>"; };
 		91B61D7A20D94AA40026809E /* LinkedList+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinkedList+Tests.swift"; sourceTree = "<group>"; };
 		91B61D7D20DA5F6F0026809E /* ReverseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseString.swift; sourceTree = "<group>"; };
@@ -250,7 +248,6 @@
 			isa = PBXGroup;
 			children = (
 				91D71A4C20D12B6100709547 /* OwnStack.swift */,
-				91B61D7520D944F40026809E /* Stack+Tests.swift */,
 				91B61D7720D9455D0026809E /* Stack+BasedOnArray.swift */,
 			);
 			path = Stack;
@@ -384,7 +381,6 @@
 				914DF2142100C179001E9551 /* BinarySearchTree.swift in Sources */,
 				91301ACC20F2550F003B4FC0 /* Counting.swift in Sources */,
 				9110EF9E2138334C00458A6B /* BSTDictionary.swift in Sources */,
-				91B61D7620D944F40026809E /* Stack+Tests.swift in Sources */,
 				914DF20820FCE4A9001E9551 /* FindKthMinItem.swift in Sources */,
 				91DA0BBB20E96D57008BC259 /* Quick.swift in Sources */,
 				916B88AD20BEC7BE00BA92DF /* IsFibonacciNumber.swift in Sources */,
