@@ -32,6 +32,9 @@ class QueueTest: XCTestCase {
 
 class Queue<T> {
     
+    /// Queue is based on Array for the simplicity.
+    /// Linked list is the best basis for enqueue/dequeue operations.
+    
     private lazy var items = [T]()
     
     func enqueue(_ item: T) {
