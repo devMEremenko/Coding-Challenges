@@ -8,9 +8,11 @@
 
 import XCTest
 
-/* TODO:
-    HashTable based on open addressing (with double hashing).
- */
+/// TODO:
+/// HashTable based on open addressing (with double hashing)
+///
+
+
 
 /*
 @inline(__always) private func _index(for key: Key) -> Int {
