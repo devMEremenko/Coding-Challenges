@@ -18,7 +18,6 @@
 		914DF20B20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF20A20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift */; };
 		914DF20E20FE920D001E9551 /* KMP_Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF20D20FE920D001E9551 /* KMP_Algorithm.swift */; };
 		914DF2122100B5F8001E9551 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF2112100B5F8001E9551 /* BinaryTree.swift */; };
-		914DF2142100C179001E9551 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF2132100C179001E9551 /* BinarySearchTree.swift */; };
 		916B88AB20BD7C1700BA92DF /* FindFibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B88AA20BD7C1700BA92DF /* FindFibonacciNumber.swift */; };
 		916B88AD20BEC7BE00BA92DF /* IsFibonacciNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B88AC20BEC7BE00BA92DF /* IsFibonacciNumber.swift */; };
 		9175BC7D207F63E800934B4B /* Statistics.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9175BC77207F63E800934B4B /* Statistics.strings */; };
@@ -57,7 +56,6 @@
 		914DF20A20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "K-th-SmallestinLexicographicalOrder_440.swift"; sourceTree = "<group>"; };
 		914DF20D20FE920D001E9551 /* KMP_Algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMP_Algorithm.swift; sourceTree = "<group>"; };
 		914DF2112100B5F8001E9551 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
-		914DF2132100C179001E9551 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		916B88AA20BD7C1700BA92DF /* FindFibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFibonacciNumber.swift; sourceTree = "<group>"; };
 		916B88AC20BEC7BE00BA92DF /* IsFibonacciNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsFibonacciNumber.swift; sourceTree = "<group>"; };
 		9175BC77207F63E800934B4B /* Statistics.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Statistics.strings; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				914DF2112100B5F8001E9551 /* BinaryTree.swift */,
-				914DF2132100C179001E9551 /* BinarySearchTree.swift */,
 				9110EF9D2138334C00458A6B /* BSTDictionary.swift */,
 			);
 			path = BinaryTree;
@@ -378,7 +375,6 @@
 			files = (
 				914DF2122100B5F8001E9551 /* BinaryTree.swift in Sources */,
 				914DF20E20FE920D001E9551 /* KMP_Algorithm.swift in Sources */,
-				914DF2142100C179001E9551 /* BinarySearchTree.swift in Sources */,
 				91301ACC20F2550F003B4FC0 /* Counting.swift in Sources */,
 				9110EF9E2138334C00458A6B /* BSTDictionary.swift in Sources */,
 				914DF20820FCE4A9001E9551 /* FindKthMinItem.swift in Sources */,
