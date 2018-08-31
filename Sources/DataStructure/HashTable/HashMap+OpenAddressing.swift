@@ -9,7 +9,7 @@
 import XCTest
 
 /// TODO:
-/// HashTable based on open addressing (with double hashing)
+/// HashTable based on the open addressing (with double hashing)
 ///
 
 
