@@ -10,13 +10,20 @@ import XCTest
 
 private class StackTests: XCTestCase {
     
-    func testStack() {
+    func testArrayStack() {
         
-        let stack = ArrayStack<Int>()
+        var stack = ArrayStack<Int>()
         stack.push(2)
         stack.push(3)
         stack.push(4)
         XCTAssert(stack.top == 4)
+        
+        for expected in stride(from: 4, to: 2, by: -1) {
+            XCTAssert(stack.pop() == expected)
+        }
+    }
+    
+    func testExtendedArray() {
         
         var arrStack = Array<Int>()
         arrStack.push(2)
@@ -26,23 +33,23 @@ private class StackTests: XCTestCase {
     }
 }
 
-private class ArrayStack<T> {
+private struct ArrayStack<T> {
     
     /// Array based implementation using a class
+    private var items: Array<T>
     
-    init(_ capacity: Int = 17) {
+    init(_ capacity: Int = 1) {
         items = Array()
         items.reserveCapacity(capacity)
     }
     
-    private lazy var items = Array<T>()
-    
-    func push(_ item: T) {
+    mutating func push(_ item: T) {
         items.append(item)
     }
     
-    func pop(_ item: T) {
-        items.removeLast()
+    @discardableResult
+    mutating func pop() -> T? {
+        return items.popLast()
     }
     
     var isEmpty: Bool {
