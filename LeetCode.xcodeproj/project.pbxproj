@@ -29,16 +29,14 @@
 		919C8B2F20E1CAB3006EE57D /* PrintAllSubsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C8B2E20E1CAB3006EE57D /* PrintAllSubsets.swift */; };
 		91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */; };
 		91AE83AC2084FA6800DCADDF /* RomanToInteger_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */; };
-		91B61D7320D944520026809E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7220D944520026809E /* List.swift */; };
 		91B61D7820D9455D0026809E /* Stack+BasedOnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7720D9455D0026809E /* Stack+BasedOnArray.swift */; };
-		91B61D7B20D94AA40026809E /* LinkedList+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7A20D94AA40026809E /* LinkedList+Tests.swift */; };
 		91B61D7E20DA5F6F0026809E /* ReverseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7D20DA5F6F0026809E /* ReverseString.swift */; };
 		91BC7F1A20F7731400FDB1AE /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC7F1920F7731400FDB1AE /* Heap.swift */; };
 		91BC7F1D20F8F56300FDB1AE /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC7F1C20F8F56300FDB1AE /* HeapSort.swift */; };
 		91BC7F2020FCA8B700FDB1AE /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC7F1F20FCA8B700FDB1AE /* Queue.swift */; };
 		91BC7F2320FCAD1300FDB1AE /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC7F2220FCAD1300FDB1AE /* PriorityQueue.swift */; };
-		91D71A4D20D12B6100709547 /* OwnStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D71A4C20D12B6100709547 /* OwnStack.swift */; };
-		91D9EF4B2091E69700969B6D /* HastSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9EF4A2091E69700969B6D /* HastSet.swift */; };
+		91D71A4D20D12B6100709547 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D71A4C20D12B6100709547 /* Stack.swift */; };
+		91D7A3C821388A160072BE90 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7A3C721388A150072BE90 /* LinkedList.swift */; };
 		91D9EF4D209204C800969B6D /* HashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9EF4C209204C800969B6D /* HashMap.swift */; };
 		91DA0BBB20E96D57008BC259 /* Quick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DA0BBA20E96D57008BC259 /* Quick.swift */; };
 /* End PBXBuildFile section */
@@ -68,16 +66,14 @@
 		919C8B2E20E1CAB3006EE57D /* PrintAllSubsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintAllSubsets.swift; sourceTree = "<group>"; };
 		91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyContests80.swift; sourceTree = "<group>"; };
 		91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanToInteger_13.swift; sourceTree = "<group>"; };
-		91B61D7220D944520026809E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		91B61D7720D9455D0026809E /* Stack+BasedOnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stack+BasedOnArray.swift"; sourceTree = "<group>"; };
-		91B61D7A20D94AA40026809E /* LinkedList+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinkedList+Tests.swift"; sourceTree = "<group>"; };
 		91B61D7D20DA5F6F0026809E /* ReverseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseString.swift; sourceTree = "<group>"; };
 		91BC7F1920F7731400FDB1AE /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		91BC7F1C20F8F56300FDB1AE /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		91BC7F1F20FCA8B700FDB1AE /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		91BC7F2220FCAD1300FDB1AE /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
-		91D71A4C20D12B6100709547 /* OwnStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnStack.swift; sourceTree = "<group>"; };
-		91D9EF4A2091E69700969B6D /* HastSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HastSet.swift; sourceTree = "<group>"; };
+		91D71A4C20D12B6100709547 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		91D7A3C721388A150072BE90 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		91D9EF4C209204C800969B6D /* HashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMap.swift; sourceTree = "<group>"; };
 		91DA0BBA20E96D57008BC259 /* Quick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +115,6 @@
 		910A8043209EF1EC006AF346 /* HashTable */ = {
 			isa = PBXGroup;
 			children = (
-				91D9EF4A2091E69700969B6D /* HastSet.swift */,
 				91D9EF4C209204C800969B6D /* HashMap.swift */,
 				9193B18C209335E4000240A1 /* HashMap+OpenAddressing.swift */,
 			);
@@ -244,7 +239,7 @@
 		91B61D7420D944E70026809E /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				91D71A4C20D12B6100709547 /* OwnStack.swift */,
+				91D71A4C20D12B6100709547 /* Stack.swift */,
 				91B61D7720D9455D0026809E /* Stack+BasedOnArray.swift */,
 			);
 			path = Stack;
@@ -253,8 +248,7 @@
 		91B61D7920D94A960026809E /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
-				91B61D7220D944520026809E /* List.swift */,
-				91B61D7A20D94AA40026809E /* LinkedList+Tests.swift */,
+				91D7A3C721388A150072BE90 /* LinkedList.swift */,
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
@@ -384,7 +378,7 @@
 				919C8B2B20E18356006EE57D /* WeeklyContests90.swift in Sources */,
 				91BC7F2320FCAD1300FDB1AE /* PriorityQueue.swift in Sources */,
 				9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */,
-				91D71A4D20D12B6100709547 /* OwnStack.swift in Sources */,
+				91D71A4D20D12B6100709547 /* Stack.swift in Sources */,
 				9139FA6B208752EA00229150 /* LongestCommonPrefix_14.swift in Sources */,
 				91B61D7820D9455D0026809E /* Stack+BasedOnArray.swift in Sources */,
 				91BC7F1D20F8F56300FDB1AE /* HeapSort.swift in Sources */,
@@ -394,14 +388,12 @@
 				918D50992122261B00DEFB61 /* RingBuffer.swift in Sources */,
 				91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */,
 				9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */,
+				91D7A3C821388A160072BE90 /* LinkedList.swift in Sources */,
 				919C8B2F20E1CAB3006EE57D /* PrintAllSubsets.swift in Sources */,
 				91BC7F2020FCA8B700FDB1AE /* Queue.swift in Sources */,
-				91B61D7320D944520026809E /* List.swift in Sources */,
-				91D9EF4B2091E69700969B6D /* HastSet.swift in Sources */,
 				9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */,
 				916B88AB20BD7C1700BA92DF /* FindFibonacciNumber.swift in Sources */,
 				91301ACA20ED2EBB003B4FC0 /* Merge.swift in Sources */,
-				91B61D7B20D94AA40026809E /* LinkedList+Tests.swift in Sources */,
 				91BC7F1A20F7731400FDB1AE /* Heap.swift in Sources */,
 				91D9EF4D209204C800969B6D /* HashMap.swift in Sources */,
 				9193B18D209335E4000240A1 /* HashMap+OpenAddressing.swift in Sources */,

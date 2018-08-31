@@ -39,7 +39,7 @@ private class ReverseString: XCTestCase {
         /// Time O(n)
         /// Space O(n)
         
-        let stack = OwnStack<Character>()
+        let stack = Stack<Character>()
         
         for item in string {
             stack.push(item)
