@@ -346,6 +346,19 @@ extension List {
     }
 }
 
+extension List: Sequence {
+    
+    func makeIterator() -> AnyIterator<Item> {
+        var node = head
+        return AnyIterator<Item> {
+            defer {
+                node = node?.next
+            }
+            return node?.value
+        }
+    }
+}
+
 // MARK: - Debug (Private)
 
 private extension List {
