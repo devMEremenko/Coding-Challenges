@@ -50,7 +50,6 @@ public extension String {
     }
 }
 
-
 //MARK: - Dictionary
 
 public extension Dictionary where Value: Equatable {
