@@ -8,40 +8,45 @@
 
 import Foundation
 
-//MARK: - String
-
 public extension String {
     
-    subscript (from: Int, to: Int) -> String? {
-        
-        guard !isEmpty else { return nil }
-        
-        guard let _fromIndex = index(startIndex, offsetBy: from, limitedBy: endIndex) else {
-            return nil
-        }
-        guard let _toIndex = index(startIndex, offsetBy: from + to, limitedBy: endIndex) else {
-            return nil
-        }
-        
-        return String(self[_fromIndex..._toIndex])
-    }
-}
-
-public extension String {
-    
-    subscript (idx: Int) -> Character {
+    subscript(range: Range<Index>) -> String {
         get {
-            return self[index(startIndex, offsetBy: idx)]
+            return String(self[range])
+        }
+        set {
+            replaceSubrange(range, with: newValue)
         }
     }
-}
-
-public extension Substring {
     
-    subscript (idx: Int) -> Character {
+    subscript(index: Int) -> Character {
         get {
-            return self[index(startIndex, offsetBy: idx)]
+            return self[findStringIndex(index)]
         }
+        set {            
+            let stringIndex = findStringIndex(index)
+            remove(at: stringIndex)
+            insert(newValue, at: stringIndex)
+        }
+    }
+    
+    subscript(range: CountableRange<Int>) -> String {
+        get {
+            return self[findStringIndexRange(range)]
+        }
+        set {
+            self[findStringIndexRange(range)] = newValue
+        }
+    }
+    
+    private func findStringIndex(_ offset: Int) -> Index {
+        return index(startIndex, offsetBy: offset)
+    }
+    
+    private func findStringIndexRange(_ range: CountableRange<Int>) -> Range<Index> {
+        let start = findStringIndex(range.lowerBound)
+        let end = index(start, offsetBy: range.count)
+        return start..<end
     }
 }
 
