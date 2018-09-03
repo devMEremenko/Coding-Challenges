@@ -10,34 +10,26 @@ import XCTest
 
 class PrintAllSubsets: XCTestCase {
     
-    func test() {
-        printAllSubsets([1, 2, 3, 4], depth: 3)
+    func testAllCombination() {
+        printAllCombinations("AB")
+        /// A AA AB
+        /// B BB BA
     }
     
-    func printAllSubsets(_ orig: [Int], depth: Int) {
-        var subset: [Int?] = Array(repeating: nil, count: depth)
-        
-        helper(orig, &subset, 0, 0, depth)
+    /// Time: O(string.count ^ string.count)
+    func printAllCombinations(_ source: String) {
+        printAllCombinationsHelper(source, "", source.count)
     }
     
-    func helper(_ orig: [Int],
-                _ subset: inout [Int?],
-                _ start: Int,
-                _ index: Int,
-                _ depth: Int) {
+    func printAllCombinationsHelper(_ source: String, _ prefix: String, _ remaining: Int) {
         
-        guard index != depth else {
-            print(subset as! Array<Int> as Any)
-            print()
-            return
-        }
+        /// Note: it is commented to speed up the test runtime
+        /// print(prefix)
         
-        for var i in start..<orig.count { /// && (orig.count - i + 1 >= depth - index)
-            subset[index] = orig[i]
-            
-            helper(orig, &subset, i + 1, index + 1, depth)
-            
-            i += 1
+        guard remaining > 0 else { return }
+        
+        for item in source {
+            printAllCombinationsHelper(source, prefix + String(item), remaining - 1)
         }
     }
 }
