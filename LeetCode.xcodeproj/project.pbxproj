@@ -23,11 +23,13 @@
 		9175BC7D207F63E800934B4B /* Statistics.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9175BC77207F63E800934B4B /* Statistics.strings */; };
 		9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175BC7A207F63E800934B4B /* ReverseInteger_7.swift */; };
 		9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9175BC7B207F63E800934B4B /* TwoSum_1.swift */; };
-		917FB5B1213DC1D300908162 /* Permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FB5B0213DC1D300908162 /* Permutation.swift */; };
+		917FB5B1213DC1D300908162 /* Permutations_1_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FB5B0213DC1D300908162 /* Permutations_1_2.swift */; };
+		917FB5B82141074800908162 /* IsUnique_1_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FB5B72141074800908162 /* IsUnique_1_1.swift */; };
 		918D50992122261B00DEFB61 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D50982122261B00DEFB61 /* RingBuffer.swift */; };
 		9193B18D209335E4000240A1 /* HashMap+OpenAddressing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9193B18C209335E4000240A1 /* HashMap+OpenAddressing.swift */; };
 		919C8B2B20E18356006EE57D /* WeeklyContests90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C8B2A20E18356006EE57D /* WeeklyContests90.swift */; };
 		919C8B2F20E1CAB3006EE57D /* PrintAllSubsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C8B2E20E1CAB3006EE57D /* PrintAllSubsets.swift */; };
+		91AE066821411EF40046A910 /* URLify_1_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE066721411EF40046A910 /* URLify_1_3.swift */; };
 		91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */; };
 		91AE83AC2084FA6800DCADDF /* RomanToInteger_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */; };
 		91B61D7820D9455D0026809E /* Stack+BasedOnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B61D7720D9455D0026809E /* Stack+BasedOnArray.swift */; };
@@ -63,11 +65,13 @@
 		9175BC7A207F63E800934B4B /* ReverseInteger_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseInteger_7.swift; sourceTree = "<group>"; };
 		9175BC7B207F63E800934B4B /* TwoSum_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoSum_1.swift; sourceTree = "<group>"; };
 		9175BC7C207F63E800934B4B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		917FB5B0213DC1D300908162 /* Permutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutation.swift; sourceTree = "<group>"; };
+		917FB5B0213DC1D300908162 /* Permutations_1_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations_1_2.swift; sourceTree = "<group>"; };
+		917FB5B72141074800908162 /* IsUnique_1_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsUnique_1_1.swift; sourceTree = "<group>"; };
 		918D50982122261B00DEFB61 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
 		9193B18C209335E4000240A1 /* HashMap+OpenAddressing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HashMap+OpenAddressing.swift"; sourceTree = "<group>"; };
 		919C8B2A20E18356006EE57D /* WeeklyContests90.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyContests90.swift; sourceTree = "<group>"; };
 		919C8B2E20E1CAB3006EE57D /* PrintAllSubsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintAllSubsets.swift; sourceTree = "<group>"; };
+		91AE066721411EF40046A910 /* URLify_1_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLify_1_3.swift; sourceTree = "<group>"; };
 		91AE83A92084CB9200DCADDF /* WeeklyContests80.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyContests80.swift; sourceTree = "<group>"; };
 		91AE83AB2084FA6800DCADDF /* RomanToInteger_13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanToInteger_13.swift; sourceTree = "<group>"; };
 		91B61D7720D9455D0026809E /* Stack+BasedOnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stack+BasedOnArray.swift"; sourceTree = "<group>"; };
@@ -222,7 +226,9 @@
 		917FB5AF213DC1C000908162 /* CrackingTheCodingInterview */ = {
 			isa = PBXGroup;
 			children = (
-				917FB5B0213DC1D300908162 /* Permutation.swift */,
+				917FB5B72141074800908162 /* IsUnique_1_1.swift */,
+				917FB5B0213DC1D300908162 /* Permutations_1_2.swift */,
+				91AE066721411EF40046A910 /* URLify_1_3.swift */,
 			);
 			path = CrackingTheCodingInterview;
 			sourceTree = "<group>";
@@ -436,6 +442,7 @@
 				919C8B2B20E18356006EE57D /* WeeklyContests90.swift in Sources */,
 				91BC7F2320FCAD1300FDB1AE /* PriorityQueue.swift in Sources */,
 				9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */,
+				91AE066821411EF40046A910 /* URLify_1_3.swift in Sources */,
 				91D71A4D20D12B6100709547 /* Stack.swift in Sources */,
 				9139FA6B208752EA00229150 /* LongestCommonPrefix_14.swift in Sources */,
 				91B61D7820D9455D0026809E /* Stack+BasedOnArray.swift in Sources */,
@@ -456,8 +463,9 @@
 				91D9EF4D209204C800969B6D /* HashMap.swift in Sources */,
 				9193B18D209335E4000240A1 /* HashMap+OpenAddressing.swift in Sources */,
 				9102B4222080F196004ABC77 /* PalindromeNumber_9.swift in Sources */,
-				917FB5B1213DC1D300908162 /* Permutation.swift in Sources */,
+				917FB5B1213DC1D300908162 /* Permutations_1_2.swift in Sources */,
 				91B6EEC9213C015000ED91D9 /* BFS+Tree.swift in Sources */,
+				917FB5B82141074800908162 /* IsUnique_1_1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
