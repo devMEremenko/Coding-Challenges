@@ -36,26 +36,30 @@ extension PalindromePermutationTests {
     }
     
     func isPalindromePermutationUsingSorting(_ source: String) -> Bool {
+        let sorted = filter(source).sorted()
+        return searchDiff(sorted)
+    }
+    
+    private func filter(_ source: String) -> String {
+        let set = CharacterSet.alphanumerics
+        return source.components(separatedBy: set.inverted).joined().lowercased()
+    }
+    
+    private func searchDiff(_ sorted: [Character]) -> Bool {
         
-        let sorted = source.lowercased().sorted()
-        
-        var diff = 0
+        var foundDiff = false
         var idx = 0
         
         while idx < sorted.count - 1 {
             
-            /// Spaces should be skipped in palindromes
-            guard sorted[idx] != " " && sorted[idx + 1] != " " else { idx += 1; continue }
-            
             if sorted[idx] == sorted[idx + 1] {
                 idx += 1
             } else {
-                diff += 1
-                if diff >= 2 {
+                if foundDiff {
                     return false
                 }
+                foundDiff = true
             }
-            
             idx += 1
         }
         
@@ -78,11 +82,9 @@ extension PalindromePermutationTests {
     }
     
     func isPalindromePermutationUsingHT(_ source: String) -> Bool {
-        
-        let lowercased = source.lowercased()
-        
-        let map = createMap(lowercased)
-        return checkDiff(lowercased, map)
+        let input = filter(source)
+        let map = createMap(input)
+        return checkDiff(input, map)
     }
     
     private func createMap(_ source: String) -> [Character: Int] {
@@ -90,8 +92,6 @@ extension PalindromePermutationTests {
         var map = [Character: Int]()
         
         for item in source {
-            
-            guard item != " " else { continue }
             
             if let number = map[item] {
                 map[item] = number + 1
@@ -111,9 +111,7 @@ extension PalindromePermutationTests {
             
             if let number = map[item], number % 2 != 0 {
                 diff += 1
-                if diff >= 2 {
-                    return false
-                }
+                if diff >= 2 { return false }
             }
         }
         
@@ -124,9 +122,19 @@ extension PalindromePermutationTests {
 extension PalindromePermutationTests {
     
     /// Time: O(n)
-    /// Space: O(32 bytes)
+    /// Space: O(1)
     
     /// TODO: Implement this using a bit vector
+    
+    /// If you think more deeply about this problem, you might notice
+    /// that we don't actually need to know the counts. We just need to know
+    /// if the count is even or odd.
+    ///
+    /// Think about flipping a light on/off (that is initially off).
+    /// If the light winds up in the off state, we don't know how many times
+    /// we flipped it, but we do know it was an even count.
+    ///
+    /// Page 197
     
     /// func isPalindromePermutationUsingBitSet(_ source: String) -> Bool {
     ///
