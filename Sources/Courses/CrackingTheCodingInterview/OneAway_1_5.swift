@@ -37,7 +37,7 @@ extension OneAwayTests {
     func isOneAway(_ s1: String, _ s2: String) -> Bool {
         
         if abs(s1.count - s2.count) < 2 {
-            return checkInsDel(s1, s2)
+            return checkIsOneAway(s1, s2)
         }
         return false /// Length diff > 1
     }
@@ -51,12 +51,12 @@ extension OneAwayTests {
     ///    the index of the max string should be increased and remaining
     ///    characters should be the same.
     
-    private func checkInsDel(_ s1: String, _ s2: String) -> Bool {
+    private func checkIsOneAway(_ s1: String, _ s2: String) -> Bool {
         
         let minString = s1.count < s2.count ? s1 : s2
-        let maxString = s1.count >= s2.count ? s1 : s2
+        let maxString = s1.count < s2.count ? s2 : s1
         
-        var diff = 0
+        var foundDiff = false
         var minIdx = 0
         var maxIdx = 0
         
@@ -64,10 +64,10 @@ extension OneAwayTests {
             
             if minString[minIdx] != maxString[maxIdx] {
                 
-                diff += 1
-                if diff > 1 {
+                if foundDiff {
                     return false
                 }
+                foundDiff = true
                 
                 if minString.count != maxString.count {
                     maxIdx += 1
