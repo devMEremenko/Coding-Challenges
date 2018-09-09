@@ -239,6 +239,7 @@
 		917FB5AF213DC1C000908162 /* CrackingTheCodingInterview */ = {
 			isa = PBXGroup;
 			children = (
+				91A4EEF4213D563800D72DD7 /* Big(O) */,
 				91C04D0021456E25007A10DC /* Chapter_1 */,
 			);
 			path = CrackingTheCodingInterview;
@@ -328,7 +329,6 @@
 		91B6EEC6213C00C600ED91D9 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				91A4EEF4213D563800D72DD7 /* Big(O) */,
 				914DF20C20FE81E6001E9551 /* PatternSearching */,
 				91B6EEC7213C00DD00ED91D9 /* BFS+DFS */,
 				91DA0BB920E96D3A008BC259 /* Sort */,

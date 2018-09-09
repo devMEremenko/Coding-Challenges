@@ -10,45 +10,68 @@ import XCTest
 
 private class ReverseString: XCTestCase {
     
-    func test() {
+    func testReverseOddCharacters() {
         
-        XCTAssert(reverse("Hello") == String("Hello".reversed()))
+        var source = "Hello"
+        
+        reverse(&source)
+        
+        XCTAssert(source == String("Hello".reversed()))
+    }
+    
+    func testReverseEvenCharacters() {
+        
+        var source = "Name is Alex"
+        
+        reverse(&source)
+        
+        XCTAssert(source == String("Name is Alex".reversed()))
+    }
+    
+    func testReverseUsingStack() {
+        
         XCTAssert(reverseUsingStack("Hello") == String("Hello".reversed()))
     }
+}
+
+extension ReverseString {
     
-    func reverse(_ string: String) -> String {
+    /// Time O(n)
+    /// Space O(1)
+    
+    func reverse(_ source: inout String) {
         
-        /// Time O(n)
-        /// Space O(n)
+        guard source.count > 1 else { return }
         
-        guard string.count > 1 else { return string }
-        
-        /// Since String is a Collection, a string shares the same storage with an array
-        var items = ArraySlice(string)
-        
-        for i in 0..<items.count / 2 {
-            let j = items.count - 1 - i
-            items.swapAt(i, j)
+        for startIdx in 0..<source.count / 2 {
+            
+            let endIdx = source.count - 1 - startIdx
+            
+            let temp = source[startIdx]
+            source[startIdx] = source[endIdx]
+            source[endIdx] = temp
         }
-        
-        return String(items)
     }
+}
+
+extension ReverseString {
     
-    func reverseUsingStack(_ string: String) -> String {
-        
-        /// Time O(n)
-        /// Space O(n)
+    /// Time O(n)
+    /// Space O(n)
+    
+    func reverseUsingStack(_ source: String) -> String {
         
         let stack = Stack<Character>()
         
-        for item in string {
+        for item in source {
             stack.push(item)
         }
         
         var result = ""
+        result.reserveCapacity(source.count)
+        
         while !stack.isEmpty {
-            result.append(stack.top!)
-            stack.pop()
+            result.append(stack.pop()!)
         }
         
         return result
