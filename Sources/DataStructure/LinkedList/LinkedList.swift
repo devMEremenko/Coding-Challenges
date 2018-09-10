@@ -20,6 +20,7 @@ extension LinkedListExample {
         XCTAssert(list.first == nil)
         XCTAssert(list.last == nil)
         XCTAssert(list.isEmpty == true)
+        XCTAssert(list.count == 0)
     }
     
     func testAddToStart() {
@@ -33,6 +34,7 @@ extension LinkedListExample {
         XCTAssert(list.firstNode?.value == 3)
         XCTAssert(list.lastNode?.value == 1)
         XCTAssert(list.isEmpty == false)
+        XCTAssert(list.count == 3)
     }
     
     func testAddToEnd() {
@@ -46,6 +48,7 @@ extension LinkedListExample {
         XCTAssert(list.firstNode?.value == 1)
         XCTAssert(list.lastNode?.value == 3)
         XCTAssert(list.isEmpty == false)
+        XCTAssert(list.count == 3)
     }
 }
 
@@ -63,18 +66,21 @@ extension LinkedListExample {
         XCTAssert(list.firstNode?.value == 2)
         XCTAssert(list.lastNode?.value == 3)
         XCTAssert(list.isEmpty == false)
+        XCTAssert(list.count == 2)
         
         XCTAssert(list.removeFirst() == 2)
         XCTAssert(list.items == [3])
         XCTAssert(list.firstNode?.value == 3)
         XCTAssert(list.lastNode?.value == 3)
         XCTAssert(list.isEmpty == false)
+        XCTAssert(list.count == 1)
         
         XCTAssert(list.removeFirst() == 3)
         XCTAssert(list.items == [])
         XCTAssert(list.firstNode?.value == nil)
         XCTAssert(list.lastNode?.value == nil)
         XCTAssert(list.isEmpty == true)
+        XCTAssert(list.count == 0)
     }
     
     func testRemoveLast() {
@@ -83,24 +89,28 @@ extension LinkedListExample {
         list.addTo(end: 1)
         list.addTo(end: 2)
         list.addTo(end: 3)
+        XCTAssert(list.count == 3)
         
         XCTAssert(list.removeLast() == 3)
         XCTAssert(list.items == [1, 2])
         XCTAssert(list.firstNode?.value == 1)
         XCTAssert(list.lastNode?.value == 2)
         XCTAssert(list.isEmpty == false)
+        XCTAssert(list.count == 2)
         
         XCTAssert(list.removeLast() == 2)
         XCTAssert(list.items == [1])
         XCTAssert(list.firstNode?.value == 1)
         XCTAssert(list.lastNode?.value == 1)
         XCTAssert(list.isEmpty == false)
+        XCTAssert(list.count == 1)
         
         XCTAssert(list.removeLast() == 1)
         XCTAssert(list.items == [])
         XCTAssert(list.firstNode?.value == nil)
         XCTAssert(list.lastNode?.value == nil)
         XCTAssert(list.isEmpty == true)
+        XCTAssert(list.count == 0)
     }
 }
 
@@ -123,6 +133,7 @@ extension LinkedListExample {
         }
         
         XCTAssert(items == [4, 1, 2, 3])
+        XCTAssert(list.count == 4)
     }
     
     func testTraverseFromEnd() {
@@ -132,6 +143,7 @@ extension LinkedListExample {
         list.addTo(end: 2)
         list.addTo(end: 3)
         list.addTo(start: 4)
+        XCTAssert(list.count == 4)
         
         var items = [Int]()
         var lastNode = list.lastNode
@@ -142,6 +154,7 @@ extension LinkedListExample {
         }
         
         XCTAssert(items == [3, 2, 1, 4])
+        XCTAssert(list.count == 4)
     }
 }
 
@@ -154,6 +167,7 @@ extension LinkedListExample {
         list.addTo(end: 2)
         list.addTo(end: 3)
         list.addTo(start: 4)
+        XCTAssert(list.count == 4)
         
         XCTAssert(list.contains({ $0 == 0 }) == false)
         XCTAssert(list.contains({ $0 == 3 }))
@@ -161,6 +175,7 @@ extension LinkedListExample {
         XCTAssert(list.contains({ $0 == 4 }))
         XCTAssert(list.contains({ $0 == 1 }))
         XCTAssert(list.contains({ $0 == 5 }) == false)
+        XCTAssert(list.count == 4)
     }
     
     func testRemoveWhere() {
@@ -170,14 +185,22 @@ extension LinkedListExample {
         list.addTo(end: 2)
         list.addTo(end: 3)
         list.addTo(start: 4)
+        XCTAssert(list.count == 4)
         
         XCTAssert(list.remove({ $0 == 0 }) == nil) /// Remove a non-existing item
+        XCTAssert(list.count == 4)
         XCTAssert(list.remove({ $0 == 3 }) == 3)   /// Remove from the end
+        XCTAssert(list.count == 3)
         XCTAssert(list.remove({ $0 == 1 }) == 1)   /// Remove from the middle
+        XCTAssert(list.count == 2)
         XCTAssert(list.remove({ $0 == 2 }) == 2)
+        XCTAssert(list.count == 1)
         XCTAssert(list.remove({ $0 == 2 }) == nil) /// Try to remove a deleted item
+        XCTAssert(list.count == 1)
         XCTAssert(list.remove({ $0 == 4 }) == 4)   /// Remove from the beginning
+        XCTAssert(list.count == 0)
         XCTAssert(list.remove({ $0 == 5 }) == nil) /// Remove a non-existing item
+        XCTAssert(list.count == 0)
     }
 }
 
@@ -189,6 +212,7 @@ struct List<Item> {
     
     private var head: Node?
     private var tail: Node?
+    private(set) var count = 0
     
     init() {}
     
@@ -223,6 +247,9 @@ struct List<Item> {
 extension List {
     
     mutating func addTo(start item: Item) {
+        
+        increaseCount()
+        
         let node = Node(item)
         node.next = head
         head?.previous = node
@@ -234,6 +261,8 @@ extension List {
     }
     
     mutating func addTo(end item: Item) {
+        
+        increaseCount()
         
         guard tail != nil else {
             /// List is empty
@@ -254,6 +283,8 @@ extension List {
     @discardableResult
     mutating func removeFirst() -> Item? {
         
+        decreaseCount()
+        
         defer {
             head = head?.next
             if head == nil {
@@ -268,6 +299,8 @@ extension List {
     mutating func removeLast() -> Item? {
         
         guard head != nil, tail != nil else { return nil }
+        
+        decreaseCount()
         
         defer {
             let previous = tail?.previous
@@ -331,11 +364,14 @@ extension List {
         /// checks node.next values
         while let currentNode = node?.next {
             if `where`(currentNode.value) {
+                
                 let previous = currentNode.previous
                 let next = currentNode.next
                 
                 previous?.next = next
                 next?.previous = previous
+                
+                decreaseCount()
                 
                 return currentNode.value
             }
@@ -343,6 +379,17 @@ extension List {
         }
         
         return nil
+    }
+}
+
+extension List {
+    
+    mutating func decreaseCount() {
+        count = count > 0 ? count - 1 : 0
+    }
+    
+    mutating func increaseCount() {
+        count += 1
     }
 }
 
