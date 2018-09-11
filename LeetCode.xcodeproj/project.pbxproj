@@ -26,6 +26,7 @@
 		917FB5B1213DC1D300908162 /* Permutations_1_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FB5B0213DC1D300908162 /* Permutations_1_2.swift */; };
 		917FB5B82141074800908162 /* IsUnique_1_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FB5B72141074800908162 /* IsUnique_1_1.swift */; };
 		918D50992122261B00DEFB61 /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D50982122261B00DEFB61 /* RingBuffer.swift */; };
+		91932FDA2148915400C3BD9C /* RemoveDuplicates_2_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91932FD92148915400C3BD9C /* RemoveDuplicates_2_1.swift */; };
 		9193B18D209335E4000240A1 /* HashMap+OpenAddressing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9193B18C209335E4000240A1 /* HashMap+OpenAddressing.swift */; };
 		919C8B2B20E18356006EE57D /* WeeklyContests90.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C8B2A20E18356006EE57D /* WeeklyContests90.swift */; };
 		919C8B2F20E1CAB3006EE57D /* PrintAllSubsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C8B2E20E1CAB3006EE57D /* PrintAllSubsets.swift */; };
@@ -44,6 +45,7 @@
 		91BC7F2020FCA8B700FDB1AE /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC7F1F20FCA8B700FDB1AE /* Queue.swift */; };
 		91BC7F2320FCAD1300FDB1AE /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BC7F2220FCAD1300FDB1AE /* PriorityQueue.swift */; };
 		91C04D022145ABFE007A10DC /* RotateMatrix_1_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C04D012145ABFE007A10DC /* RotateMatrix_1_7.swift */; };
+		91C04D0521468913007A10DC /* Runner_2_0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C04D0421468913007A10DC /* Runner_2_0.swift */; };
 		91D71A4D20D12B6100709547 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D71A4C20D12B6100709547 /* Stack.swift */; };
 		91D7A3C821388A160072BE90 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7A3C721388A150072BE90 /* LinkedList.swift */; };
 		91D9EF4D209204C800969B6D /* HashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9EF4C209204C800969B6D /* HashMap.swift */; };
@@ -74,6 +76,7 @@
 		917FB5B0213DC1D300908162 /* Permutations_1_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations_1_2.swift; sourceTree = "<group>"; };
 		917FB5B72141074800908162 /* IsUnique_1_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsUnique_1_1.swift; sourceTree = "<group>"; };
 		918D50982122261B00DEFB61 /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		91932FD92148915400C3BD9C /* RemoveDuplicates_2_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicates_2_1.swift; sourceTree = "<group>"; };
 		9193B18C209335E4000240A1 /* HashMap+OpenAddressing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HashMap+OpenAddressing.swift"; sourceTree = "<group>"; };
 		919C8B2A20E18356006EE57D /* WeeklyContests90.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyContests90.swift; sourceTree = "<group>"; };
 		919C8B2E20E1CAB3006EE57D /* PrintAllSubsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintAllSubsets.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		91BC7F1F20FCA8B700FDB1AE /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		91BC7F2220FCAD1300FDB1AE /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		91C04D012145ABFE007A10DC /* RotateMatrix_1_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateMatrix_1_7.swift; sourceTree = "<group>"; };
+		91C04D0421468913007A10DC /* Runner_2_0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner_2_0.swift; sourceTree = "<group>"; };
 		91D71A4C20D12B6100709547 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		91D7A3C721388A150072BE90 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		91D9EF4C209204C800969B6D /* HashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMap.swift; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 			children = (
 				91A4EEF4213D563800D72DD7 /* Big(O) */,
 				91C04D0021456E25007A10DC /* Chapter_1 */,
+				91C04D03214687FB007A10DC /* Chapter_2 */,
 			);
 			path = CrackingTheCodingInterview;
 			sourceTree = "<group>";
@@ -383,6 +388,15 @@
 			path = Chapter_1;
 			sourceTree = "<group>";
 		};
+		91C04D03214687FB007A10DC /* Chapter_2 */ = {
+			isa = PBXGroup;
+			children = (
+				91C04D0421468913007A10DC /* Runner_2_0.swift */,
+				91932FD92148915400C3BD9C /* RemoveDuplicates_2_1.swift */,
+			);
+			path = Chapter_2;
+			sourceTree = "<group>";
+		};
 		91DA0BB920E96D3A008BC259 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,6 +487,7 @@
 				914DF20820FCE4A9001E9551 /* FindKthMinItem.swift in Sources */,
 				91DA0BBB20E96D57008BC259 /* Quick.swift in Sources */,
 				916B88AD20BEC7BE00BA92DF /* IsFibonacciNumber.swift in Sources */,
+				91C04D0521468913007A10DC /* Runner_2_0.swift in Sources */,
 				914DF20B20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift in Sources */,
 				919C8B2B20E18356006EE57D /* WeeklyContests90.swift in Sources */,
 				91F78D8321445318003262E6 /* ZeroMatrix_1_8.swift in Sources */,
@@ -493,6 +508,7 @@
 				91D7A3C821388A160072BE90 /* LinkedList.swift in Sources */,
 				919C8B2F20E1CAB3006EE57D /* PrintAllSubsets.swift in Sources */,
 				91AE066D2143D9EB0046A910 /* BitSet.swift in Sources */,
+				91932FDA2148915400C3BD9C /* RemoveDuplicates_2_1.swift in Sources */,
 				91C04D022145ABFE007A10DC /* RotateMatrix_1_7.swift in Sources */,
 				91F78D81214430BF003262E6 /* StringCompression_1_6.swift in Sources */,
 				91BC7F2020FCA8B700FDB1AE /* Queue.swift in Sources */,
