@@ -14,6 +14,7 @@
 		91301ACC20F2550F003B4FC0 /* Counting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301ACB20F2550F003B4FC0 /* Counting.swift */; };
 		9139FA6B208752EA00229150 /* LongestCommonPrefix_14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9139FA6A208752EA00229150 /* LongestCommonPrefix_14.swift */; };
 		9139FA6E2088CA9200229150 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9139FA6D2088CA9200229150 /* Extensions.swift */; };
+		913BD9F4214BE2C000520710 /* ReturnKthToLast_2_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BD9F3214BE2C000520710 /* ReturnKthToLast_2_2.swift */; };
 		914DF20820FCE4A9001E9551 /* FindKthMinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF20720FCE4A9001E9551 /* FindKthMinItem.swift */; };
 		914DF20B20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF20A20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift */; };
 		914DF20E20FE920D001E9551 /* KMP_Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF20D20FE920D001E9551 /* KMP_Algorithm.swift */; };
@@ -63,6 +64,7 @@
 		9139FA6A208752EA00229150 /* LongestCommonPrefix_14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestCommonPrefix_14.swift; sourceTree = "<group>"; };
 		9139FA6D2088CA9200229150 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		913B4657207D38EF00A093AF /* LeetCode.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCode.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		913BD9F3214BE2C000520710 /* ReturnKthToLast_2_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnKthToLast_2_2.swift; sourceTree = "<group>"; };
 		914DF20720FCE4A9001E9551 /* FindKthMinItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindKthMinItem.swift; sourceTree = "<group>"; };
 		914DF20A20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "K-th-SmallestinLexicographicalOrder_440.swift"; sourceTree = "<group>"; };
 		914DF20D20FE920D001E9551 /* KMP_Algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMP_Algorithm.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			children = (
 				91C04D0421468913007A10DC /* Runner_2_0.swift */,
 				91932FD92148915400C3BD9C /* RemoveDuplicates_2_1.swift */,
+				913BD9F3214BE2C000520710 /* ReturnKthToLast_2_2.swift */,
 			);
 			path = Chapter_2;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				9102B4222080F196004ABC77 /* PalindromeNumber_9.swift in Sources */,
 				917FB5B1213DC1D300908162 /* Permutations_1_2.swift in Sources */,
 				91B6EEC9213C015000ED91D9 /* BFS+Tree.swift in Sources */,
+				913BD9F4214BE2C000520710 /* ReturnKthToLast_2_2.swift in Sources */,
 				917FB5B82141074800908162 /* IsUnique_1_1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
