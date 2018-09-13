@@ -12,25 +12,48 @@ class ReturnKthToLastTests: XCTestCase {
     
     /// Implement an algorithm to find the kth to last element of a singly linked list.
     
-    func testFindKthToLastEnd() {
+    private typealias Value = Equatable
+    
+    func testFindKthEnd() {
         
         let data = createListToFindEnd()
         
-        XCTAssert(findKthToLast(data.source, data.k) == data.expected)
+        XCTAssert(findKth(data.source, data.k) == data.expected)
     }
     
-    func testFindKthToLastMid() {
+    func testFindKthMid() {
         
         let data = createListToFindMid()
         
-        XCTAssert(findKthToLast(data.source, data.k) == data.expected)
+        XCTAssert(findKth(data.source, data.k) == data.expected)
     }
     
-    func testFindKthToLastNil() {
+    func testFindKthNil() {
         
         let data = createListToFindNil()
         
-        XCTAssert(findKthToLast(data.source, data.k) == data.expected)
+        XCTAssert(findKth(data.source, data.k) == data.expected)
+    }
+    
+    func testFindKthRecursivelyEnd() {
+        
+        let data = createListToFindEnd()
+        
+        XCTAssert(findKthRecursively(data.source, data.k) == data.expected)
+    }
+    
+    func testFindKthRecursivelyMid() {
+        
+        let data = createListToFindMid()
+        
+        XCTAssert(findKthRecursively(data.source, data.k) == data.expected)
+    }
+    
+    func testFindKthRecursivelyNil() {
+        
+        let data = createListToFindNil()
+        
+        XCTAssert(findKthRecursively(data.source, data.k) == data.expected)
     }
 }
 
@@ -39,15 +62,14 @@ extension ReturnKthToLastTests {
     /// Time: O(n)
     /// Space: O(1)
     
-    typealias Value = Equatable
-    
-    private func findKthToLast<Value>(_ head: ListNode<Value>, _ k: Int) -> Value? {
+    private func findKth<Value>(_ head: ListNode<Value>, _ k: Int) -> Value? {
         
         guard k >= 0 else { return nil }
         
         if let runner = findRunner(head, k) {
             return findValue(head, runner)
         }
+        
         return nil
     }
     
@@ -56,7 +78,7 @@ extension ReturnKthToLastTests {
         var runner: ListNode<Value>? = head
         
         /// In some situations, it's better to check if runner != nil
-        for _ in stride(from: k - 1, through: 1, by: -1) {
+        for _ in stride(from: k, through: 1, by: -1) {
             runner = runner?.next
         }
         
@@ -74,6 +96,36 @@ extension ReturnKthToLastTests {
         }
         
         return result?.value
+    }
+}
+
+extension ReturnKthToLastTests {
+    
+    /// Time: O(n)
+    /// Space: O(n)
+    
+    private func findKthRecursively<Value>(_ head: ListNode<Value>, _ k: Int) -> Value? {
+        return __findKthRecursively(head, k).value
+    }
+    
+    private func __findKthRecursively<Value>
+        (_ head: ListNode<Value>?, _ k: Int) -> (value: Value?, level: Int) {
+        
+        guard let node = head else { return (nil, 0) }
+        
+        let result = __findKthRecursively(node.next, k)
+        
+        if let value = result.value {
+            return (value, result.level) /// value has been already found, just return it
+        }
+        
+        let level = result.level
+        
+        if k - level == 0 { /// check if it's a right level
+            return (node.value, result.level)
+        }
+        
+        return (nil, level + 1) /// get back to a previous level
     }
 }
 
@@ -98,7 +150,7 @@ extension ReturnKthToLastTests {
         head.next?.next = ListNode(3)
         head.next?.next?.next = ListNode(4)
         
-        return (head, 3, 2)
+        return (head, 3, 1)
     }
     
     private func createListToFindNil() -> TestData {
