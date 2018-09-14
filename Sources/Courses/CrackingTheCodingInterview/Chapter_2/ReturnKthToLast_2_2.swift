@@ -11,6 +11,8 @@ import XCTest
 class ReturnKthToLastTests: XCTestCase {
     
     /// Implement an algorithm to find the kth to last element of a singly linked list.
+    ///
+    /// Note: k = 0 means having to return the last item.
     
     private typealias Value = Equatable
     
@@ -78,7 +80,7 @@ extension ReturnKthToLastTests {
         var runner: ListNode<Value>? = head
         
         /// In some situations, it's better to check if runner != nil
-        for _ in stride(from: k, through: 1, by: -1) {
+        for _ in 0..<k {
             runner = runner?.next
         }
         
