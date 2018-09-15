@@ -167,6 +167,7 @@ extension ReturnKthToLastTests {
 }
 
 private class ListNode<Value: Equatable> {
+    
     var value: Value
     var next: ListNode<Value>?
     
