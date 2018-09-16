@@ -41,11 +41,14 @@ class AddTwoNumbers_2: XCTestCase {
     
     func addTwoNumbers(first: Int, second: Int) {
         
+        /// Create linked lists from numbers
         let firstList = _listForNumber(first)
         let secondList = _listForNumber(second)
         
+        /// Solving
         var list = addTwoNumbers(firstList, secondList)
         
+        /// Verifying
         var result = 0
         
         while list != nil {
