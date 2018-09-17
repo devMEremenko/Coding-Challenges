@@ -11,27 +11,32 @@ import Foundation
 class Stack<Item> {
     
     private var list = List<Item>()
+    private(set) var size = 0
     
     init() {}
     
-//    init<S: Sequence>(_ sequence: S) where S.Iterator.Element == Item {
-//        for item in sequence {
-//            list.addTo(start: item)
-//        }
-//    }
-//
-//    init<S: Sequence>(_ sequence: S) where S.Iterator.Element == (key: Item, value: Int) {
-//        for (item, _) in sequence {
-//            list.addTo(start: item)
-//        }
-//    }
+    init<S: Sequence>(_ sequence: S) where S.Iterator.Element == Item {
+        size = sequence.underestimatedCount
+        for item in sequence {
+            list.addTo(start: item)
+        }
+    }
+
+    init<S: Sequence>(_ sequence: S) where S.Iterator.Element == (key: Item, value: Int) {
+        size = sequence.underestimatedCount
+        for (item, _) in sequence {
+            list.addTo(start: item)
+        }
+    }
     
     func push(_ item: Item) {
+        size += 1
         list.addTo(start: item)
     }
     
     @discardableResult
     func pop() -> Item? {
+        size = size > 0 ? size - 1 : 0 
         return list.removeFirst()
     }
     
