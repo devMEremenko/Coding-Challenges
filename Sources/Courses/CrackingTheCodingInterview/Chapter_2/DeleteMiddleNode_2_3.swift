@@ -27,10 +27,10 @@ class DeleteMiddleNodeTests: XCTestCase {
         
         deleteMiddle(data.toDelete)
         
-        verify(data.source, expected: data.expected)
+        verify(data.source, data.expected)
     }
     
-    private func verify(_ source: Node, expected: Node) {
+    private func verify(_ source: Node, _ expected: Node) {
         
         /// make mutable
         var sourceCheck: Node? = source
