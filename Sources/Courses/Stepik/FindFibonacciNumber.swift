@@ -35,12 +35,6 @@ class FindFibonacciNumber: XCTestCase {
         var second = 1
         var result = 0 /// The initial value does not matter
         
-        /// i       0 1 2 3 4
-        ///         ---------
-        /// first   0 0 1 1 2
-        /// second  - 1 1 2 3
-        /// result  0 1 2 3 5
-        
         for _ in 0...number {
             /// can overflow
             result = first + second
