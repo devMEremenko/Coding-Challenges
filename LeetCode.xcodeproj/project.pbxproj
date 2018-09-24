@@ -285,8 +285,8 @@
 		917FB5B2213DC25800908162 /* Courses */ = {
 			isa = PBXGroup;
 			children = (
-				911735B6215AD40400A262E3 /* HackerRank */,
 				917FB5B3213DC2A100908162 /* LeetCode */,
+				911735B6215AD40400A262E3 /* HackerRank */,
 				916B88A920BD7BE600BA92DF /* Stepik */,
 				91B61D7C20DA5F3A0026809E /* MyCodeSchool */,
 				917FB5AF213DC1C000908162 /* CrackingTheCodingInterview */,
