@@ -10,6 +10,7 @@
 		9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102B41F2080D673004ABC77 /* AddTwoNumbers_2.swift */; };
 		9102B4222080F196004ABC77 /* PalindromeNumber_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */; };
 		9110EF9E2138334C00458A6B /* BSTDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9110EF9D2138334C00458A6B /* BSTDictionary.swift */; };
+		911735B8215AD45A00A262E3 /* GoldmanSachsInterviewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911735B7215AD45A00A262E3 /* GoldmanSachsInterviewTest.swift */; };
 		91301ACA20ED2EBB003B4FC0 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301AC920ED2EBB003B4FC0 /* Merge.swift */; };
 		91301ACC20F2550F003B4FC0 /* Counting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301ACB20F2550F003B4FC0 /* Counting.swift */; };
 		9139FA6B208752EA00229150 /* LongestCommonPrefix_14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9139FA6A208752EA00229150 /* LongestCommonPrefix_14.swift */; };
@@ -65,6 +66,7 @@
 		9102B41F2080D673004ABC77 /* AddTwoNumbers_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers_2.swift; sourceTree = "<group>"; };
 		9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber_9.swift; sourceTree = "<group>"; };
 		9110EF9D2138334C00458A6B /* BSTDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTDictionary.swift; sourceTree = "<group>"; };
+		911735B7215AD45A00A262E3 /* GoldmanSachsInterviewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldmanSachsInterviewTest.swift; sourceTree = "<group>"; };
 		91301AC920ED2EBB003B4FC0 /* Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merge.swift; sourceTree = "<group>"; };
 		91301ACB20F2550F003B4FC0 /* Counting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counting.swift; sourceTree = "<group>"; };
 		9139FA6A208752EA00229150 /* LongestCommonPrefix_14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestCommonPrefix_14.swift; sourceTree = "<group>"; };
@@ -160,6 +162,14 @@
 				9193B18C209335E4000240A1 /* HashMap+OpenAddressing.swift */,
 			);
 			path = HashTable;
+			sourceTree = "<group>";
+		};
+		911735B6215AD40400A262E3 /* HackerRank */ = {
+			isa = PBXGroup;
+			children = (
+				911735B7215AD45A00A262E3 /* GoldmanSachsInterviewTest.swift */,
+			);
+			path = HackerRank;
 			sourceTree = "<group>";
 		};
 		9139FA6C2088CA7B00229150 /* Extensions */ = {
@@ -275,6 +285,7 @@
 		917FB5B2213DC25800908162 /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				911735B6215AD40400A262E3 /* HackerRank */,
 				917FB5B3213DC2A100908162 /* LeetCode */,
 				916B88A920BD7BE600BA92DF /* Stepik */,
 				91B61D7C20DA5F3A0026809E /* MyCodeSchool */,
@@ -539,6 +550,7 @@
 				9139FA6E2088CA9200229150 /* Extensions.swift in Sources */,
 				91AE066F2143DE6D0046A910 /* OneAway_1_5.swift in Sources */,
 				918D50992122261B00DEFB61 /* RingBuffer.swift in Sources */,
+				911735B8215AD45A00A262E3 /* GoldmanSachsInterviewTest.swift in Sources */,
 				91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */,
 				9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */,
 				91D7A3C821388A160072BE90 /* LinkedList.swift in Sources */,
