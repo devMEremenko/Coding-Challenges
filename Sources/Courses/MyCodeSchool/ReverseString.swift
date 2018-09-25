@@ -61,7 +61,7 @@ extension ReverseString {
     
     func reverseUsingStack(_ source: String) -> String {
         
-        let stack = Stack<Character>()
+        var stack = Stack<Character>()
         
         for item in source {
             stack.push(item)

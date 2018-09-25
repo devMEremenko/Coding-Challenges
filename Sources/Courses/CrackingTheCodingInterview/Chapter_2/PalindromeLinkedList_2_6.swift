@@ -154,7 +154,7 @@ extension PalindromeLinkedListTests {
     
     private func isPalindromeUsingStack(_ head: Node) -> Bool {
         
-        let stack = Stack<Int>()
+        var stack = Stack<Int>()
         
         var slower: Node? = head
         var runner: Node? = head

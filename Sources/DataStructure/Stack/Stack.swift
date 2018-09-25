@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Stack<Item> {
+struct Stack<Item> {
     
-    private var list = List<Item>()
+    private lazy var list = List<Item>()
     private(set) var size = 0
     
     init() {}
@@ -29,22 +29,22 @@ class Stack<Item> {
         }
     }
     
-    func push(_ item: Item) {
+    mutating func push(_ item: Item) {
         size += 1
         list.addTo(start: item)
     }
     
     @discardableResult
-    func pop() -> Item? {
+    mutating func pop() -> Item? {
         size = size > 0 ? size - 1 : 0 
         return list.removeFirst()
     }
     
     var isEmpty: Bool {
-        return list.isEmpty
+        mutating get { return list.isEmpty }
     }
     
     var top: Item? {
-        return list.first
+        mutating get { return list.first }
     }
 }
