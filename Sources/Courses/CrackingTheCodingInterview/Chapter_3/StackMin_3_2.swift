@@ -10,6 +10,13 @@ import XCTest
 
 class StackMinTests: XCTestCase {
     
+    /// Stack Min
+    ///
+    /// How would you design a stack which, in addition to push and pop,
+    /// has a function min which returns the minimum element?
+    ///
+    /// Push, pop and min should all operate in O(1) time.
+    
     func testSetup() {
         
         var stack = StackMin<Int>()
