@@ -7,7 +7,7 @@ language: swift
 
 script:
 
-- xcodebuild test -workspace 'LeetCode.xcodeproj' -scheme Tests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' ONLY_ACTIVE_ARCH=NO
+- xcodebuild test -project 'LeetCode.xcodeproj' -scheme Tests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' ONLY_ACTIVE_ARCH=NO
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
