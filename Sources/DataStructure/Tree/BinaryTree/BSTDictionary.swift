@@ -40,7 +40,7 @@ class BSTKeyValueExample: XCTestCase {
 
 struct BSTDictionary<Key: Comparable, Value> {
     
-    private var root: Node?
+    var root: Node? /// This is not marked as 'private' because it is used by BFS DFS.
     
     init() {}
     
