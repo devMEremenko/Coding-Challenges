@@ -8,7 +8,7 @@
 
 import XCTest
 
-private class StackTests: XCTestCase {
+private class ArrayStackTests: XCTestCase {
     
     func testArrayStack() {
         

@@ -6,11 +6,20 @@
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.
 //
 
-import Foundation
+import XCTest
+
+class StackTests: XCTestCase {
+    
+    func test() {
+        
+    }
+}
 
 struct Stack<Item> {
     
-    private lazy var list = List<Item>()
+    ///TODO: Tests
+    
+    private var list = List<Item>()
     private(set) var size = 0
     
     init() {}
@@ -41,10 +50,25 @@ struct Stack<Item> {
     }
     
     var isEmpty: Bool {
-        mutating get { return list.isEmpty }
+        return list.isEmpty
     }
     
     var top: Item? {
-        mutating get { return list.first }
+        return list.first
+    }
+}
+
+extension Stack {
+    
+    /// Note: These methods are implmented in order to support kind of some solutions.
+    
+    var back: Item? {
+        return list.last
+    }
+    
+    @discardableResult
+    mutating func popBack() -> Item? {
+        size = size > 0 ? size - 1 : 0
+        return list.removeLast()
     }
 }
