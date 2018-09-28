@@ -48,7 +48,13 @@ struct BSTDictionary<Key: Comparable, Value> {
         self.root = Node(key, value)
     }
     
-    private class Node {
+    init<S: Sequence>(_ sequence: S) where S.Iterator.Element == (key: Key, value: Value) {
+        for (key, value) in sequence {
+            put(value, for: key)
+        }
+    }
+    
+    class Node {
         var key: Key
         var value: Value
         var left: Node?
