@@ -20,6 +20,7 @@
 		913BD9F8214C3CB300520710 /* PartitionLinkedList_2_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BD9F7214C3CB300520710 /* PartitionLinkedList_2_4.swift */; };
 		913BD9FA214C614D00520710 /* PalindromeLinkedList_2_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BD9F9214C614D00520710 /* PalindromeLinkedList_2_6.swift */; };
 		914288C0215C408200D542E6 /* StackMin_3_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914288BF215C408200D542E6 /* StackMin_3_2.swift */; };
+		914288C2215D282C00D542E6 /* StackOfPlates_3_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914288C1215D282C00D542E6 /* StackOfPlates_3_3.swift */; };
 		914DF20820FCE4A9001E9551 /* FindKthMinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF20720FCE4A9001E9551 /* FindKthMinItem.swift */; };
 		914DF20B20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF20A20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift */; };
 		914DF20E20FE920D001E9551 /* KMP_Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914DF20D20FE920D001E9551 /* KMP_Algorithm.swift */; };
@@ -78,6 +79,7 @@
 		913BD9F7214C3CB300520710 /* PartitionLinkedList_2_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionLinkedList_2_4.swift; sourceTree = "<group>"; };
 		913BD9F9214C614D00520710 /* PalindromeLinkedList_2_6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeLinkedList_2_6.swift; sourceTree = "<group>"; };
 		914288BF215C408200D542E6 /* StackMin_3_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackMin_3_2.swift; sourceTree = "<group>"; };
+		914288C1215D282C00D542E6 /* StackOfPlates_3_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOfPlates_3_3.swift; sourceTree = "<group>"; };
 		914DF20720FCE4A9001E9551 /* FindKthMinItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindKthMinItem.swift; sourceTree = "<group>"; };
 		914DF20A20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "K-th-SmallestinLexicographicalOrder_440.swift"; sourceTree = "<group>"; };
 		914DF20D20FE920D001E9551 /* KMP_Algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMP_Algorithm.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				914288BF215C408200D542E6 /* StackMin_3_2.swift */,
+				914288C1215D282C00D542E6 /* StackOfPlates_3_3.swift */,
 			);
 			path = Chapter_3;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				91C04D022145ABFE007A10DC /* RotateMatrix_1_7.swift in Sources */,
 				91F78D81214430BF003262E6 /* StringCompression_1_6.swift in Sources */,
 				91BC7F2020FCA8B700FDB1AE /* Queue.swift in Sources */,
+				914288C2215D282C00D542E6 /* StackOfPlates_3_3.swift in Sources */,
 				9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */,
 				916B88AB20BD7C1700BA92DF /* FindFibonacciNumber.swift in Sources */,
 				91301ACA20ED2EBB003B4FC0 /* Merge.swift in Sources */,
