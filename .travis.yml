@@ -1,0 +1,13 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+osx_image: xcode9.2
+language: swift
+
+script:
+
+- xcodebuild test -workspace 'LeetCode.xcodeproj' -scheme Tests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' ONLY_ACTIVE_ARCH=NO
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
