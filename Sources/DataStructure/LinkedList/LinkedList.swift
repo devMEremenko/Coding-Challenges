@@ -204,6 +204,58 @@ extension LinkedListExample {
     }
 }
 
+extension LinkedListExample {
+    
+    func testEquatablePositive() {
+        
+        var list1 = List<Int>()
+        list1.addTo(start: 1)
+        list1.addTo(end: 2)
+        list1.addTo(end: 3)
+        list1.addTo(start: 4)
+        
+        var list2 = List<Int>()
+        list2.addTo(start: 3)
+        list2.addTo(start: 2)
+        list2.addTo(start: 1)
+        list2.addTo(start: 4)
+        
+        XCTAssertTrue(list1 == list2)
+        XCTAssertFalse(list1 != list2)
+    }
+    
+    func testEquatableNegative() {
+        
+        var list1 = List<Int>()
+        list1.addTo(start: 1)
+        list1.addTo(end: 1)
+        list1.addTo(end: 2)
+        
+        var list2 = List<Int>()
+        list2.addTo(start: 1)
+        list2.addTo(start: 1)
+        list2.addTo(start: 3)
+        
+        XCTAssertFalse(list1 == list2)
+        XCTAssertTrue(list1 != list2)
+    }
+    
+    func testEquatableDiffCount() {
+        
+        var list1 = List<Int>()
+        list1.addTo(start: 1)
+        list1.addTo(start: 1)
+        
+        var list2 = List<Int>()
+        list2.addTo(start: 1)
+        list2.addTo(start: 1)
+        list2.addTo(start: 1)
+        
+        XCTAssertTrue(list1 != list2)
+        XCTAssertFalse(list1 == list2)
+    }
+}
+
 // MARK: - Data Structure
 
 struct List<Item> {
@@ -403,6 +455,31 @@ extension List: Sequence {
             }
             return node?.value
         }
+    }
+}
+
+extension List where Item: Equatable {
+    
+    static func == (left: List<Item>, right: List<Item>) -> Bool {
+        
+        guard left.count == right.count else { return false }
+        
+        var leftHead: Node? = left.head
+        var rightHead: Node? = right.head
+        
+        while leftHead != nil {
+            if leftHead?.value != rightHead?.value {
+                return false
+            }
+            leftHead = leftHead?.next
+            rightHead = rightHead?.next
+        }
+        
+        return true
+    }
+    
+    static func != (left: List<Item>, right: List<Item>) -> Bool {
+        return left == right ? false : true
     }
 }
 
