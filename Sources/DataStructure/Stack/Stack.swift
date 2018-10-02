@@ -58,6 +58,13 @@ struct Stack<Item> {
     }
 }
 
+extension Stack where Item: Equatable {
+    
+    static func == (left: Stack<Item>, right: Stack<Item>) -> Bool {
+        return left.list == right.list
+    }
+}
+
 extension Stack {
     
     /// Note: These methods are implmented in order to support kind of some solutions.
