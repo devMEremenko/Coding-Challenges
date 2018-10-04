@@ -60,6 +60,8 @@
 		91D7A3C821388A160072BE90 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7A3C721388A150072BE90 /* LinkedList.swift */; };
 		91D9EF4D209204C800969B6D /* HashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9EF4C209204C800969B6D /* HashMap.swift */; };
 		91DA0BBB20E96D57008BC259 /* Quick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DA0BBA20E96D57008BC259 /* Quick.swift */; };
+		91E1957A2160D396006D4519 /* QueueViaStacks_3_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E195792160D396006D4519 /* QueueViaStacks_3_4.swift */; };
+		91E1957C21611F3B006D4519 /* SortStack_3_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1957B21611F3B006D4519 /* SortStack_3_5.swift */; };
 		91F78D81214430BF003262E6 /* StringCompression_1_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F78D80214430BF003262E6 /* StringCompression_1_6.swift */; };
 		91F78D8321445318003262E6 /* ZeroMatrix_1_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F78D8221445318003262E6 /* ZeroMatrix_1_8.swift */; };
 /* End PBXBuildFile section */
@@ -120,6 +122,8 @@
 		91D7A3C721388A150072BE90 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		91D9EF4C209204C800969B6D /* HashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashMap.swift; sourceTree = "<group>"; };
 		91DA0BBA20E96D57008BC259 /* Quick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick.swift; sourceTree = "<group>"; };
+		91E195792160D396006D4519 /* QueueViaStacks_3_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueViaStacks_3_4.swift; sourceTree = "<group>"; };
+		91E1957B21611F3B006D4519 /* SortStack_3_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortStack_3_5.swift; sourceTree = "<group>"; };
 		91F78D80214430BF003262E6 /* StringCompression_1_6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCompression_1_6.swift; sourceTree = "<group>"; };
 		91F78D8221445318003262E6 /* ZeroMatrix_1_8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroMatrix_1_8.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,6 +211,8 @@
 			children = (
 				914288BF215C408200D542E6 /* StackMin_3_2.swift */,
 				914288C1215D282C00D542E6 /* StackOfPlates_3_3.swift */,
+				91E195792160D396006D4519 /* QueueViaStacks_3_4.swift */,
+				91E1957B21611F3B006D4519 /* SortStack_3_5.swift */,
 			);
 			path = Chapter_3;
 			sourceTree = "<group>";
@@ -553,6 +559,7 @@
 				91F78D8321445318003262E6 /* ZeroMatrix_1_8.swift in Sources */,
 				91BC7F2320FCAD1300FDB1AE /* PriorityQueue.swift in Sources */,
 				9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */,
+				91E1957A2160D396006D4519 /* QueueViaStacks_3_4.swift in Sources */,
 				91C0BE2B215934A400FEF745 /* LoopDetection_2_8.swift in Sources */,
 				91AE066821411EF40046A910 /* URLify_1_3.swift in Sources */,
 				91D71A4D20D12B6100709547 /* Stack.swift in Sources */,
@@ -566,6 +573,7 @@
 				91AE066F2143DE6D0046A910 /* OneAway_1_5.swift in Sources */,
 				918D50992122261B00DEFB61 /* RingBuffer.swift in Sources */,
 				911735B8215AD45A00A262E3 /* GoldmanSachsInterviewTest.swift in Sources */,
+				91E1957C21611F3B006D4519 /* SortStack_3_5.swift in Sources */,
 				91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */,
 				9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */,
 				91D7A3C821388A160072BE90 /* LinkedList.swift in Sources */,
