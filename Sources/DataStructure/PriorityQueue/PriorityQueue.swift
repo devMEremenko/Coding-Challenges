@@ -23,7 +23,7 @@ class PriorityQueueTests: XCTestCase {
     }
 }
 
-class Node<T, P: Equatable> {
+private class Node<T, P: Equatable> {
     
     var priority: P
     var value: T
