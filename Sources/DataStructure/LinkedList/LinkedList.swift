@@ -370,8 +370,6 @@ extension List {
 
 extension List {
     
-    /// TODO: tests
-    
     func contains(_ where: (Item) -> Bool) -> Bool {
         guard let node = head else { return false }
         return contains(node, `where`)
