@@ -36,6 +36,54 @@ class BSTKeyValueExample: XCTestCase {
             XCTAssert(keys[item] == String(item))
         }
     }
+    
+    func testBST() {
+        
+        /// TODO: fix deletion for that case
+        
+        var binaryTree = BSTDictionary(key: 123, value: Car("Red"))
+        
+        binaryTree[99] = Car("Blue")
+        binaryTree[126] = Car("Green")
+        binaryTree[44] = Car("Yellow")
+        binaryTree[32] = Car("Mini")
+        binaryTree[234] = Car("Big car")
+        binaryTree[432] = Car("A bus")
+        binaryTree[104] = Car("Jeep")
+        binaryTree[100] = Car("Batmobile")
+        binaryTree[101] = Car("Sedan")
+        binaryTree[105] = Car("Firetruck")
+        
+        print("::::::::::Testing subscript::::::::::")
+        /// print("Blue car: ", binaryTree[99]?.name)
+        
+        binaryTree[99] = Car("Not Blue")
+        
+        /// print("Blue car: ", binaryTree[99]?.name)
+        
+        print(binaryTree)
+        binaryTree[99] = nil
+        
+        /// print("Blue car: ", binaryTree[99]?.name)
+        
+        print("::::::::::Testing min/max::::::::::")
+        /// let value = binaryTree.minValue()
+        /// print("MIN car: ", binaryTree[binaryTree.minKey()!]?.name)
+        /// print("MAX car: ", binaryTree[binaryTree.maxKey()!]?.name)
+        
+        print("::::::::::Delete max::::::::::")
+        binaryTree[432] = nil
+        XCTAssert(binaryTree.maxKey() == nil)
+    }
+}
+
+class Car {
+    
+    var name: String
+    
+    init(_ name: String) {
+        self.name = name
+    }
 }
 
 struct BSTDictionary<Key: Comparable, Value> {
@@ -163,6 +211,14 @@ extension BSTDictionary {
         }
     }
     
+    private func min(node: Node) -> Node {
+        var minimum = node
+        while let next = minimum.left {
+            minimum = next
+        }
+        return minimum
+    }
+    
     private func max(node: Node) -> Node {
         var maximum = node
         while let next = maximum.right {
@@ -185,5 +241,30 @@ extension BSTDictionary: CustomStringConvertible {
     
     var description: String {
         return root?.description ?? ""
+    }
+}
+
+// MARK: - Debug
+
+private extension BSTDictionary {
+    
+    func minValue() -> Value? {
+        guard let rootNode = root else { return nil }
+        return min(node: rootNode).value
+    }
+    
+    func maxValue() -> Value? {
+        guard let rootNode = root else { return nil }
+        return max(node: rootNode).value
+    }
+    
+    func minKey() -> Key? {
+        guard let rootNode = root else { return nil }
+        return min(node: rootNode).key
+    }
+    
+    func maxKey() -> Key? {
+        guard let rootNode = root else { return nil }
+        return max(node: rootNode).key
     }
 }
