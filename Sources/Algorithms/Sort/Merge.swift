@@ -24,6 +24,9 @@ class MergeSortExample: XCTestCase {
         
         XCTAssert(mergeSort(arr, 0, arr.count - 1) == arr.sorted())
     }
+}
+
+extension MergeSortExample {
     
     func mergeSort(_ arr: [Int], _ left: Int, _ right: Int) -> [Int] {
         guard left < right else { return [arr[left]] }
