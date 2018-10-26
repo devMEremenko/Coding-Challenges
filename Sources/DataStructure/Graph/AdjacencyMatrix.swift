@@ -6,56 +6,25 @@
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.
 //
 
-import XCTest
+import Foundation
 
-class AdjacencyMatrix: XCTestCase {
-    
-    func test() {
-        
-        let graph = Graph<String>()
-        
-        let newYork = "New York"
-        let london = "London"
-        let kiev = "Kiev"
-        let moscow = "Moscow"
-        
-        graph.add(newYork)
-        graph.add(london)
-        graph.add(kiev)
-        graph.add(moscow)
-        
-        graph.addEdge(from: newYork, to: london, weight: 1)
-        graph.addEdge(from: london, to: newYork, weight: 1)
-        
-        graph.addEdge(from: london, to: kiev, weight: 2)
-        
-        graph.addEdge(from: newYork, to: kiev, weight: 3)
-        graph.addEdge(from: kiev, to: newYork, weight: 4)
-        
-        graph.addEdge(from: kiev, to: moscow, weight: 1)
-        graph.addEdge(from: moscow, to: kiev, weight: 1)
-        
-        graph.addEdge(from: moscow, to: newYork, weight: 6)
-        
-        graph.printGraph()
-    }
-}
+/// MatrixGraph
+///
+/// It's a common implementation of Adjacency Matrix.
+///
+/// `matrix` -> 2D array that stores weight of edges.
+/// `nodes`  -> hash table that stores a relationship
+///             between an item and index in the 'matrix' array
 
-private struct Vertex<Item: Equatable> {
+class MatrixGraph<Item: Hashable> {
     
-    var value: Item
-    let index: Int
-    
-    init(_ value: Item, index: Int) {
-        self.value = value
-        self.index = index
-    }
-}
-
-private class Graph<Item: Hashable> {
+    typealias MatrixIndex = Int
     
     private var matrix = [[Double?]]()
-    private var nodes = [Item: Vertex<Item>]()
+    private var nodes = [Item: MatrixIndex]()
+}
+
+extension MatrixGraph: Graphable {
     
     func add(_ item: Item) {
         
@@ -68,26 +37,36 @@ private class Graph<Item: Hashable> {
         }
         
         matrix.append(Array(repeating: nil, count: matrix.count + 1))
-        nodes[item] = Vertex(item, index: matrix.count - 1)
+        nodes[item] = MatrixIndex(matrix.count - 1)
     }
     
-    func addEdge(from: Item, to: Item, weight: Double) {
+    func addEdge(from: Item, to: Item, weight: Double?) {
         
-        guard let fromNode = nodes[from] else { return }
-        guard let toNode = nodes[to] else { return }
+        guard let fromIndex = nodes[from] else { return }
+        guard let toIndex = nodes[to] else { return }
         
-        matrix[fromNode.index][toNode.index] = weight
+        matrix[fromIndex][toIndex] = weight
     }
     
-    func printGraph() {
+    func weight(from: Item, to: Item) -> Double? {
+        
+        guard let fromIndex = nodes[from] else { return nil }
+        guard let toIndex = nodes[to] else { return nil }
+        
+        return matrix[fromIndex][toIndex]
+    }
+    
+    var description: String {
+        var result = ""
         matrix.forEach { row in
-            let rows = row.map({ item -> String in
+            row.forEach({ item in
                 if let item = item {
-                    return "| " + String(item)
+                    result += "| " + String(item)
+                } else {
+                    result += "| nil"
                 }
-                return "| nil"
             })
-            print(rows)
         }
+        return result
     }
 }

@@ -8,11 +8,29 @@
 
 import XCTest
 
+/// Graphable is an abstract interface for all types of graphs
+
+protocol Graphable: CustomStringConvertible {
+    
+    associatedtype Item: Hashable
+    
+    func add(_ item: Item)
+    
+    func addEdge(from: Item, to: Item, weight: Double?)
+    
+    func weight(from: Item, to: Item) -> Double?
+}
+
 class GraphableTests: XCTestCase {
     
     func testAddItem() {
         
-        let graph = HashGraph<String>()
+        use(graph: HashGraph<String>())
+        use(graph: MatrixGraph<String>())
+        use(graph: ArrayGraph<String>())
+    }
+    
+    func use<T: Graphable>(graph: T) where T.Item == String {
         
         let newYork = "New York"
         let london = "London"
@@ -39,15 +57,4 @@ class GraphableTests: XCTestCase {
         
         print(graph.description)
     }
-}
-
-protocol Graphable: CustomStringConvertible {
-    
-    associatedtype Item: Hashable
-    
-    func add(_ item: Item)
-    
-    func addEdge(from: Item, to: Item, weight: Double?)
-    
-    func weight(from: Item, to: Item) -> Double?
 }

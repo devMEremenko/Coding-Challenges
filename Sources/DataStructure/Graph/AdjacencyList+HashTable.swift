@@ -6,11 +6,14 @@
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.
 //
 
-import XCTest
+import Foundation
 
-class AdjacencyListHashTableTests: XCTestCase {
-    
-}
+/// HashGraph
+///
+/// It's a graph that is based on a HashTable where:
+///
+///     key -> vertex
+///     value -> array of edges
 
 class HashGraph<Item: Hashable> {
     

@@ -6,93 +6,80 @@
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.
 //
 
-import XCTest
+import Foundation
 
-class AdjacencyList: XCTestCase {
-    
-    func test() {
-        
-        let graph = Graph<String>()
-        
-        let newYork = Vertex("New York")
-        let london = Vertex("London")
-        let kiev = Vertex("Kiev")
-        let moscow = Vertex("Moscow")
-        
-        graph.add(newYork)
-        graph.add(london)
-        graph.add(moscow)
-        graph.add(kiev)
-        
-        graph.addEdge(from: newYork, to: london, weight: 1)
-        graph.addEdge(from: london, to: newYork, weight: 1)
-        
-        graph.addEdge(from: london, to: kiev, weight: 2)
-        
-        graph.addEdge(from: newYork, to: kiev, weight: 3)
-        graph.addEdge(from: kiev, to: newYork, weight: 4)
-        
-        graph.addEdge(from: kiev, to: moscow, weight: 1)
-        graph.addEdge(from: moscow, to: kiev, weight: 1)
-        
-        graph.addEdge(from: moscow, to: newYork, weight: 6)
-    }
-}
+/// ArrayGraph
+///
+/// It's a graph that is based on array of vertexes and edges
 
-private struct Vertex<Item: Equatable> {
+class ArrayGraph<Item: Hashable> {
     
-    var value: Item
+    private(set) lazy var nodes = [Item]()
+    private lazy var edges = [Edge<Item>]()
     
-    init(_ value: Item) {
-        self.value = value
-    }
-    
-    static func ==(left: Vertex<Item>, right: Vertex<Item>) -> Bool {
-        return left.value == right.value
-    }
-}
-
-private class Edge<Destination> {
-    
-    var from: Destination
-    var to: Destination
-    
-    var weight: Float?
-    
-    init(_ from: Destination, _ to: Destination, _ weight: Float? = nil) {
-        self.from = from
-        self.to = to
-        self.weight = weight
-    }
-}
-
-private class Graph<Item: Equatable> {
-    
-    typealias Node = Edge<Vertex<Item>>
-    
-    private lazy var nodes = [Vertex<Item>]()
-    private lazy var edges = [Node]()
-    
-    func add(_ vertex: Vertex<Item>) {
-        
-        guard !contains(vertex) else { return }
-        nodes.append(vertex)
-    }
-    
-    func addEdge(from: Vertex<Item>, to: Vertex<Item>, weight: Float?) {
-        
-        if let edge = findEdge(from, to) {
-            edge.weight = weight
-        } else {
-            edges.append(Node(from, to, weight))
-        }
-    }
-    
-    private func contains(_ vertex: Vertex<Item>) -> Bool {
+    private func contains(_ vertex: Item) -> Bool {
         return nodes.contains(where: { $0 == vertex })
     }
     
-    private func findEdge(_ from: Vertex<Item>, _ to: Vertex<Item>) -> Node? {
+    private func findEdge(_ from: Item, _ to: Item) -> Edge<Item>? {
         return edges.first(where: { $0.from == from && $0.to == to })
+    }
+    
+    private func findAllEdges(of node: Item) -> [Edge<Item>] {
+        return edges.filter({ $0.from == node })
+    }
+}
+
+extension ArrayGraph: Graphable {
+    
+    func add(_ item: Item) {
+        guard !contains(item) else { return }
+        nodes.append(item)
+    }
+    
+    func addEdge(from: Item, to: Item, weight: Double?) {
+        if let edge = findEdge(from, to) {
+            edge.weight = weight
+        } else {
+            edges.append(Edge(from, to, weight))
+        }
+    }
+    
+    func weight(from: Item, to: Item) -> Double? {
+        return findEdge(from, to)?.weight
+    }
+    
+    var description: String {
+        var result = ""
+        
+        for item in nodes {
+            result += "[ \(item) ->"
+            
+            let allEdges = findAllEdges(of: item)
+            for (idx, edge) in allEdges.enumerated() {
+                if idx == edges.count - 1 {
+                    result += " \(edge)"
+                } else {
+                    result += " \(edge), "
+                }
+            }
+            result += " ]\n"
+        }
+        
+        return result
+    }
+}
+
+private class Edge<Item> {
+    
+    var from: Item
+    var to: Item
+    
+    var weight: Double?
+    
+    init(_ from: Item, _ to: Item, _ weight: Double? = nil) {
+        self.from = from
+        self.to = to
+        self.weight = weight
     }
 }
