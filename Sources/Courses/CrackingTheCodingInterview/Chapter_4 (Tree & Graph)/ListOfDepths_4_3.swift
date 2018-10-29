@@ -62,8 +62,8 @@ extension ListOfDepthsTests {
     private func makeListsHelper<T>(
         _ node: Node<T>,
         _ map: inout Map<T>,
-        _ depth: Int) {
-        
+        _ depth: Int)
+    {
         if var list = map[depth] {
             list.addTo(end: node)
             map[depth] = list
