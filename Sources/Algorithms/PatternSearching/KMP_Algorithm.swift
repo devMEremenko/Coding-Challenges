@@ -27,9 +27,9 @@ class KMP_Algorithm: XCTestCase {
         
         return []
     }
-    
-    func longestProperPrefix(_ pattern: String) -> [Int] {
         
+    func longestProperPrefix(_ pattern: String) -> [Int] {
+        let pattern = ArraySlice(pattern)
         /// Preprocessing
         ///
         /// KMP algorithm preprocesses `pattern` and constructs an auxiliary lps[]
