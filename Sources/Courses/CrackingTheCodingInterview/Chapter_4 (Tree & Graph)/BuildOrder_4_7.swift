@@ -45,6 +45,10 @@ extension BuildOrder_4_7 {
     
     typealias Mapping = [String: List<String>]
     
+    private enum TaskError: Error {
+        case dependencyCycle
+    }
+
     func makeBuildOrder(_ input: Input) throws -> [String] {
         
         var mapping = makeMapping(input)
@@ -57,10 +61,6 @@ extension BuildOrder_4_7 {
         }
         
         return order
-    }
-    
-    private enum TaskError: Error {
-        case dependencyCycle
     }
     
     private func _makeBuildOrder(
