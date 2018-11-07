@@ -1,5 +1,5 @@
 //
-//  Extensions.swift
+//  String+Ext.swift
 //  LeetCode
 //
 //  Created by Maxim Eremenko on 4/19/18.
@@ -50,12 +50,46 @@ public extension String {
     }
 }
 
+public extension StringProtocol {
+    
+    private typealias Items = (Character, Character)
+    
+    var bidirectional: AnySequence<(Character, Character)> {
+        return AnySequence<Items> { () -> AnyIterator<Items> in
+            guard !self.isEmpty else { return AnyIterator { return nil } }
+            
+            var start = self.startIndex
+            var end = self.index(before: self.endIndex)
+            var remaining = self.count / 2
+            
+            return AnyIterator<Items> {
+                guard remaining > 0 else { return nil }
+                defer {
+                    remaining -= 1
+                    start = self.index(after: start)
+                    if end > self.startIndex {
+                        end = self.index(before: end)
+                    }
+                }
+                return (self[start], self[end])
+            }
+        }
+    }
+}
+
+public extension Character {
+    
+    var unicodeValue: Int {
+        return Int(unicodeScalars.first?.value ?? 0)
+    }
+}
+
 //MARK: - Dictionary
 
 public extension Dictionary where Value: Equatable {
     
     func key(for value: Value) -> [Key] {
         //ATTENTION: use flatMap if you compile it with LeetCode
-        return compactMap({ return $0.value == value ? $0.key : nil })
+        return compactMap { return $0.value == value ? $0.key : nil }
     }
 }
