@@ -481,6 +481,13 @@ extension List where Item: Equatable {
     }
 }
 
+extension List: CustomStringConvertible {
+    
+    var description: String {
+        return map { $0 }.description
+    }
+}
+
 // MARK: - Debug (Private)
 
 private extension List {
