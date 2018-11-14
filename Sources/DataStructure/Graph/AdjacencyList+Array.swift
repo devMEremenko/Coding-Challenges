@@ -1,6 +1,6 @@
 //
 //  AdjacencyList.swift
-//  LeetCode
+//  CodingChallenges
 //
 //  Created by Maxim Eremenko on 10/22/18.
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.

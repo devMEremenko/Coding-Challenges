@@ -1,6 +1,6 @@
 //
 //  LinkedList.swift
-//  LeetCode
+//  CodingChallenges
 //
 //  Created by Maxim Eremenko on 8/30/18.
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.

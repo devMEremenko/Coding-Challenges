@@ -17,9 +17,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "913B4656207D38EF00A093AF"
-            BuildableName = "LeetCode.xctest"
-            BlueprintName = "LeetCode"
-            ReferencedContainer = "container:LeetCode.xcodeproj">
+            BuildableName = "CodingChallenges.xctest"
+            BlueprintName = "CodingChallenges"
+            ReferencedContainer = "container:CodingChallenges.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -28,9 +28,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "913B4656207D38EF00A093AF"
-               BuildableName = "LeetCode.xctest"
-               BlueprintName = "LeetCode"
-               ReferencedContainer = "container:LeetCode.xcodeproj">
+               BuildableName = "CodingChallenges.xctest"
+               BlueprintName = "CodingChallenges"
+               ReferencedContainer = "container:CodingChallenges.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

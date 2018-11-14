@@ -1,6 +1,6 @@
 //
 //  AdjacencyMatrix.swift
-//  LeetCode
+//  CodingChallenges
 //
 //  Created by Maxim Eremenko on 10/26/18.
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.

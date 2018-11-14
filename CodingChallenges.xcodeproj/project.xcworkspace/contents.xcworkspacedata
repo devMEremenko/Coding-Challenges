@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LeetCode.xcodeproj">
+      location = "self:/Users/maksim/Development/iOS/Home/LeetCode/CodingChallenges.xcodeproj">
    </FileRef>
 </Workspace>

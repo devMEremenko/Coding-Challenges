@@ -1,6 +1,6 @@
 //
 //  BinaryTreeInorderTraversal_94.swift
-//  LeetCode
+//  CodingChallenges
 //
 //  Created by Maxim Eremenko on 01/01/2019.
 //  Copyright © 2019 Eremenko Maxim. All rights reserved.

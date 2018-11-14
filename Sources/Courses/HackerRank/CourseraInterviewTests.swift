@@ -1,6 +1,6 @@
 //
 //  CoursTests.swift
-//  LeetCode
+//  CodingChallenges
 //
 //  Created by Maxim Eremenko on 03/01/2019.
 //  Copyright © 2019 Eremenko Maxim. All rights reserved.
