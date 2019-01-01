@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Optional {
+public extension Optional {
     
     var notNil: Bool {
         switch self {
