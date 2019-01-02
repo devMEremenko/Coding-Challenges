@@ -81,6 +81,7 @@
 		B5657E5321BEF4A100838554 /* ValidateBST_4_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5657E5221BEF4A100838554 /* ValidateBST_4_5.swift */; };
 		B56CC5B021D2C0F200C33DAA /* BuildOrder_4_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56CC5AF21D2C0F200C33DAA /* BuildOrder_4_7.swift */; };
 		B5D0608621A2B48F008F287C /* ListOfDepths_4_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0608521A2B48F008F287C /* ListOfDepths_4_3.swift */; };
+		B5DE669822077BAA008B9B1F /* CharacterSet+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE669722077BAA008B9B1F /* CharacterSet+Ext.swift */; };
 		B5E5B0F7219CD04700614206 /* MinimalTree_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5B0F6219CD04700614206 /* MinimalTree_4_2.swift */; };
 /* End PBXBuildFile section */
 
@@ -161,6 +162,7 @@
 		B5657E5221BEF4A100838554 /* ValidateBST_4_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateBST_4_5.swift; sourceTree = "<group>"; };
 		B56CC5AF21D2C0F200C33DAA /* BuildOrder_4_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildOrder_4_7.swift; sourceTree = "<group>"; };
 		B5D0608521A2B48F008F287C /* ListOfDepths_4_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfDepths_4_3.swift; sourceTree = "<group>"; };
+		B5DE669722077BAA008B9B1F /* CharacterSet+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Ext.swift"; sourceTree = "<group>"; };
 		B5E5B0F6219CD04700614206 /* MinimalTree_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalTree_4_2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,6 +252,7 @@
 			children = (
 				9139FA6D2088CA9200229150 /* String+Ext.swift */,
 				B54AD56021DA7FB100CB6CCC /* Optional+Ext.swift */,
+				B5DE669722077BAA008B9B1F /* CharacterSet+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */,
 				B502296B21CC3AB2005F66C1 /* Successor_4_6.swift in Sources */,
 				916B88AB20BD7C1700BA92DF /* FindFibonacciNumber.swift in Sources */,
+				B5DE669822077BAA008B9B1F /* CharacterSet+Ext.swift in Sources */,
 				91301ACA20ED2EBB003B4FC0 /* Merge.swift in Sources */,
 				91BC7F1A20F7731400FDB1AE /* Heap.swift in Sources */,
 				B5657E5321BEF4A100838554 /* ValidateBST_4_5.swift in Sources */,
