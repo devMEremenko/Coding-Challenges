@@ -82,6 +82,7 @@
 		B56CC5B021D2C0F200C33DAA /* BuildOrder_4_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56CC5AF21D2C0F200C33DAA /* BuildOrder_4_7.swift */; };
 		B5D0608621A2B48F008F287C /* ListOfDepths_4_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0608521A2B48F008F287C /* ListOfDepths_4_3.swift */; };
 		B5DE669822077BAA008B9B1F /* CharacterSet+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE669722077BAA008B9B1F /* CharacterSet+Ext.swift */; };
+		B5DE669A22077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE669922077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift */; };
 		B5E5B0F7219CD04700614206 /* MinimalTree_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5B0F6219CD04700614206 /* MinimalTree_4_2.swift */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +164,7 @@
 		B56CC5AF21D2C0F200C33DAA /* BuildOrder_4_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildOrder_4_7.swift; sourceTree = "<group>"; };
 		B5D0608521A2B48F008F287C /* ListOfDepths_4_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfDepths_4_3.swift; sourceTree = "<group>"; };
 		B5DE669722077BAA008B9B1F /* CharacterSet+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Ext.swift"; sourceTree = "<group>"; };
+		B5DE669922077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_Longest_Valid_Parentheses_32.swift; sourceTree = "<group>"; };
 		B5E5B0F6219CD04700614206 /* MinimalTree_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalTree_4_2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				914DF20A20FE09FF001E9551 /* K-th-SmallestinLexicographicalOrder_440.swift */,
+				B5DE669922077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift */,
 			);
 			path = Hard;
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 				9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */,
 				91D7A3C821388A160072BE90 /* LinkedList.swift in Sources */,
 				919C8B2F20E1CAB3006EE57D /* PrintAllSubsets.swift in Sources */,
+				B5DE669A22077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift in Sources */,
 				91AE066D2143D9EB0046A910 /* BitSet.swift in Sources */,
 				91FB53282177951600DE662A /* LRU.swift in Sources */,
 				91FB532521776F1A00DE662A /* LSK_BST.swift in Sources */,
