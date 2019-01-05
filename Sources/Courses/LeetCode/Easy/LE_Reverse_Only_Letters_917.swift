@@ -17,7 +17,11 @@ class LE_Reverse_Only_Letters_917: XCTestCase {
     /// https://leetcode.com/problems/reverse-only-letters/
     
     func test() {
-        XCTAssertEqual(reverseOnlyLetters("tNH95P=TV"), "VTP95H=Nt")
+        XCTAssertEqual(reverseOnlyLetters_v1("tNH95P=TV"), "VTP95H=Nt")
+        XCTAssertEqual(reverseOnlyLetters_v2("tNH95P=TV"), "VTP95H=Nt")
+        
+        XCTAssertEqual(reverseOnlyLetters_v1(""), "")
+        XCTAssertEqual(reverseOnlyLetters_v2(""), "")
     }
 }
 
@@ -26,8 +30,7 @@ extension LE_Reverse_Only_Letters_917 {
     /// Time: O(n)
     /// Space: (n) - because the characters swapping is not in place
     
-    func reverseOnlyLetters(_ s: String) -> String {
-        guard !s.isEmpty else { return s }
+    func reverseOnlyLetters_v1(_ s: String) -> String {
         
         let set = CharacterSet.letters
         var chars = Array(s.indices)
@@ -48,5 +51,30 @@ extension LE_Reverse_Only_Letters_917 {
         }
         
         return String(chars.map { s[$0] })
+    }
+    
+    /// Time: O(n)
+    /// Space: (n) - because the new result string is created
+    
+    func reverseOnlyLetters_v2(_ s: String) -> String {
+        
+        let set = CharacterSet.letters
+        var indices = Array(s.indices)
+        var result = ""
+        result.reserveCapacity(indices.count)
+        var right = indices.count - 1
+        
+        for left in (0..<s.count) {
+            if set.contains(char: s[indices[left]]) {
+                while !set.contains(char: s[indices[right]]) {
+                    right -= 1
+                }
+                result.append(s[indices[right]])
+                right -= 1
+            } else {
+                result.append(s[indices[left]])
+            }
+        }
+        return result
     }
 }
