@@ -14,7 +14,7 @@ I use it as a sandbox and constantly update it with solved problems and learned 
    - Pattern Searching (`KMP`)
    - Sorting (`Quick`, `Merge`, `Heap`, `Counting`)
    - Traversing (`BFS`, `DFS`)
-- [`Data Structure`](https://github.com/devMEremenko/LeetCode/tree/master/Sources/DataStructure)
+- [`Data Structures`](https://github.com/devMEremenko/LeetCode/tree/master/Sources/DataStructure)
    - Tree (`BST`)
    - Graph (`AdjacencyMatrix`, `AdjacencyList`, `HashGraph`)
    - Priority Queue (`Heap`)
