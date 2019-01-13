@@ -1,6 +1,6 @@
-![Build Status](https://travis-ci.org/devMEremenko/LeetCode.svg?branch=master)
+[![Build Status](https://travis-ci.org/devMEremenko/Coding-Challenges.svg?branch=master)](https://travis-ci.org/devMEremenko/Coding-Challenges)
 [![codecov.io](https://codecov.io/github/devmeremenko/LeetCode/coverage.svg?branch=master)](https://codecov.io/github/devmeremenko/LeetCode?branch=master)
-[![codebeat badge](https://codebeat.co/badges/71ef3127-6a99-4ab4-88f7-0d8bd3d7ee1b)](https://codebeat.co/projects/github-com-devmeremenko-leetcode-master)
+[![codebeat badge](https://codebeat.co/badges/96c9e251-0b7e-4227-9017-01c885a6404f)](https://codebeat.co/projects/github-com-devmeremenko-coding-challenges-master)
 [![GitHub license](https://img.shields.io/github/license/devmeremenko/LeetCode.svg)](https://github.com/devMEremenko/LeetCode/blob/master/LICENSE)
 
 ## Overview
