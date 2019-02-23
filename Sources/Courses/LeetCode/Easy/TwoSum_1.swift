@@ -57,7 +57,6 @@ class TwoSum_1: XCTestCase {
         check(mappingResults?.first, mappingResults?.last)
     }
     
-    
     //MARK: Solution 1
     
     func twoSumBruteForce1(_ nums: [Int], _ target: Int) -> [Int]? {
@@ -114,5 +113,22 @@ class TwoSum_1: XCTestCase {
         results.append(second)
         
         return (results, target)
+    }
+}
+
+extension TwoSum_1 {
+    
+    /// Time: O(n)
+    /// Space: O(n)
+    
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var dict = [Int: Int](minimumCapacity: nums.count)
+        for (index, num) in nums.enumerated() {
+            if let storedIndex = dict[target - num], storedIndex != index {
+                return [storedIndex, index]
+            }
+            dict[num] = index
+        }
+        return []
     }
 }
