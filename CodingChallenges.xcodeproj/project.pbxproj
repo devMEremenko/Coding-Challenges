@@ -84,6 +84,7 @@
 		B5DE669622077B20008B9B1F /* LE_Reverse_Only_Letters_917.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE669522077B20008B9B1F /* LE_Reverse_Only_Letters_917.swift */; };
 		B5DE669822077BAA008B9B1F /* CharacterSet+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE669722077BAA008B9B1F /* CharacterSet+Ext.swift */; };
 		B5DE669A22077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE669922077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift */; };
+		B5DE66A122088871008B9B1F /* LE_Jewels_And_Stones_771.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE66A022088871008B9B1F /* LE_Jewels_And_Stones_771.swift */; };
 		B5E5B0F7219CD04700614206 /* MinimalTree_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5B0F6219CD04700614206 /* MinimalTree_4_2.swift */; };
 /* End PBXBuildFile section */
 
@@ -167,6 +168,7 @@
 		B5DE669522077B20008B9B1F /* LE_Reverse_Only_Letters_917.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_Reverse_Only_Letters_917.swift; sourceTree = "<group>"; };
 		B5DE669722077BAA008B9B1F /* CharacterSet+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Ext.swift"; sourceTree = "<group>"; };
 		B5DE669922077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_Longest_Valid_Parentheses_32.swift; sourceTree = "<group>"; };
+		B5DE66A022088871008B9B1F /* LE_Jewels_And_Stones_771.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_Jewels_And_Stones_771.swift; sourceTree = "<group>"; };
 		B5E5B0F6219CD04700614206 /* MinimalTree_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalTree_4_2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -363,6 +365,7 @@
 				9139FA6A208752EA00229150 /* LongestCommonPrefix_14.swift */,
 				914DF20720FCE4A9001E9551 /* FindKthMinItem.swift */,
 				B5DE669522077B20008B9B1F /* LE_Reverse_Only_Letters_917.swift */,
+				B5DE66A022088871008B9B1F /* LE_Jewels_And_Stones_771.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -694,6 +697,7 @@
 				91BC7F2020FCA8B700FDB1AE /* Queue.swift in Sources */,
 				B5DE669622077B20008B9B1F /* LE_Reverse_Only_Letters_917.swift in Sources */,
 				914288C2215D282C00D542E6 /* StackOfPlates_3_3.swift in Sources */,
+				B5DE66A122088871008B9B1F /* LE_Jewels_And_Stones_771.swift in Sources */,
 				9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */,
 				B502296B21CC3AB2005F66C1 /* Successor_4_6.swift in Sources */,
 				916B88AB20BD7C1700BA92DF /* FindFibonacciNumber.swift in Sources */,
