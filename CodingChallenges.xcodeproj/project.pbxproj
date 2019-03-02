@@ -85,6 +85,7 @@
 		B5DE669822077BAA008B9B1F /* CharacterSet+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE669722077BAA008B9B1F /* CharacterSet+Ext.swift */; };
 		B5DE669A22077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE669922077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift */; };
 		B5DE66A122088871008B9B1F /* LE_Jewels_And_Stones_771.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE66A022088871008B9B1F /* LE_Jewels_And_Stones_771.swift */; };
+		B5DE66A322088BEF008B9B1F /* LE_Intersection_Of_Two_Arrays_349.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE66A222088BEF008B9B1F /* LE_Intersection_Of_Two_Arrays_349.swift */; };
 		B5E5B0F7219CD04700614206 /* MinimalTree_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5B0F6219CD04700614206 /* MinimalTree_4_2.swift */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +170,7 @@
 		B5DE669722077BAA008B9B1F /* CharacterSet+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Ext.swift"; sourceTree = "<group>"; };
 		B5DE669922077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_Longest_Valid_Parentheses_32.swift; sourceTree = "<group>"; };
 		B5DE66A022088871008B9B1F /* LE_Jewels_And_Stones_771.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_Jewels_And_Stones_771.swift; sourceTree = "<group>"; };
+		B5DE66A222088BEF008B9B1F /* LE_Intersection_Of_Two_Arrays_349.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_Intersection_Of_Two_Arrays_349.swift; sourceTree = "<group>"; };
 		B5E5B0F6219CD04700614206 /* MinimalTree_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalTree_4_2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -366,6 +368,7 @@
 				914DF20720FCE4A9001E9551 /* FindKthMinItem.swift */,
 				B5DE669522077B20008B9B1F /* LE_Reverse_Only_Letters_917.swift */,
 				B5DE66A022088871008B9B1F /* LE_Jewels_And_Stones_771.swift */,
+				B5DE66A222088BEF008B9B1F /* LE_Intersection_Of_Two_Arrays_349.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				91F78D8321445318003262E6 /* ZeroMatrix_1_8.swift in Sources */,
 				91BC7F2320FCAD1300FDB1AE /* PriorityQueue.swift in Sources */,
 				9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */,
+				B5DE66A322088BEF008B9B1F /* LE_Intersection_Of_Two_Arrays_349.swift in Sources */,
 				91E1957A2160D396006D4519 /* QueueViaStacks_3_4.swift in Sources */,
 				91C0BE2B215934A400FEF745 /* LoopDetection_2_8.swift in Sources */,
 				B54AD56121DA7FB100CB6CCC /* Optional+Ext.swift in Sources */,
