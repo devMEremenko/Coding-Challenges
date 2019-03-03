@@ -73,6 +73,7 @@
 		91FB532521776F1A00DE662A /* LSK_BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FB532421776F1A00DE662A /* LSK_BST.swift */; };
 		91FB53282177951600DE662A /* LRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FB53272177951600DE662A /* LRU.swift */; };
 		B502296B21CC3AB2005F66C1 /* Successor_4_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502296A21CC3AB2005F66C1 /* Successor_4_6.swift */; };
+		B520951F22121BEF007F5028 /* BitManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520951E22121BEF007F5028 /* BitManipulation.swift */; };
 		B54AD55F21DA713300CB6CCC /* BSTSequences_4_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54AD55E21DA713300CB6CCC /* BSTSequences_4_9.swift */; };
 		B54AD56121DA7FB100CB6CCC /* Optional+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54AD56021DA7FB100CB6CCC /* Optional+Ext.swift */; };
 		B54AD56321DBCEE000CB6CCC /* BinaryTreeInorderTraversal_94.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54AD56221DBCEE000CB6CCC /* BinaryTreeInorderTraversal_94.swift */; };
@@ -158,6 +159,7 @@
 		91FB532421776F1A00DE662A /* LSK_BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSK_BST.swift; sourceTree = "<group>"; };
 		91FB53272177951600DE662A /* LRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRU.swift; sourceTree = "<group>"; };
 		B502296A21CC3AB2005F66C1 /* Successor_4_6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Successor_4_6.swift; sourceTree = "<group>"; };
+		B520951E22121BEF007F5028 /* BitManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitManipulation.swift; sourceTree = "<group>"; };
 		B54AD55E21DA713300CB6CCC /* BSTSequences_4_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTSequences_4_9.swift; sourceTree = "<group>"; };
 		B54AD56021DA7FB100CB6CCC /* Optional+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ext.swift"; sourceTree = "<group>"; };
 		B54AD56221DBCEE000CB6CCC /* BinaryTreeInorderTraversal_94.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeInorderTraversal_94.swift; sourceTree = "<group>"; };
@@ -481,6 +483,7 @@
 		91B6EEC6213C00C600ED91D9 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				B520951D22121BD4007F5028 /* BitManipulation */,
 				914DF20C20FE81E6001E9551 /* PatternSearching */,
 				91B6EEC7213C00DD00ED91D9 /* BFS+DFS */,
 				91DA0BB920E96D3A008BC259 /* Sort */,
@@ -567,6 +570,14 @@
 				91FB53272177951600DE662A /* LRU.swift */,
 			);
 			path = Caches;
+			sourceTree = "<group>";
+		};
+		B520951D22121BD4007F5028 /* BitManipulation */ = {
+			isa = PBXGroup;
+			children = (
+				B520951E22121BEF007F5028 /* BitManipulation.swift */,
+			);
+			path = BitManipulation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -688,6 +699,7 @@
 				9175BC7F207F63E800934B4B /* TwoSum_1.swift in Sources */,
 				91D7A3C821388A160072BE90 /* LinkedList.swift in Sources */,
 				919C8B2F20E1CAB3006EE57D /* PrintAllSubsets.swift in Sources */,
+				B520951F22121BEF007F5028 /* BitManipulation.swift in Sources */,
 				B5DE669A22077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift in Sources */,
 				91AE066D2143D9EB0046A910 /* BitSet.swift in Sources */,
 				91FB53282177951600DE662A /* LRU.swift in Sources */,
