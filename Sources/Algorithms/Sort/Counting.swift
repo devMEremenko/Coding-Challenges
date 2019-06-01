@@ -30,7 +30,7 @@ class CountingSortExample: XCTestCase {
             countArray[element - min] += 1
         }
         
-        for index in 1 ..< countArray.count {
+        for index in 1..<countArray.count {
             /// Set a number of values in the current and previous buckets.
             /// It is useful when repeated items occur.
             countArray[index] += countArray[index - 1]
