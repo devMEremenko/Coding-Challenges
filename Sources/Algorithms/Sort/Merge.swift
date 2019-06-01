@@ -56,11 +56,11 @@ extension MergeSortExample {
         }
         
         if i == arr1.count {
-            result.append(contentsOf: arr2[j..<arr2.endIndex])
+            result += arr2[j..<arr2.endIndex]
         }
         
         if j == arr2.count {
-            result.append(contentsOf: arr1[i..<arr1.endIndex])
+            result += arr1[i..<arr1.endIndex]
         }
         
         return result
