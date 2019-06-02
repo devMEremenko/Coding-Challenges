@@ -20,7 +20,7 @@ class TwoSum_1: XCTestCase {
      
      Iterate over all values (with nested loop) and compare their sum with a target.
      
-     
+
      Solution 2
      Time complexity O(1)
      Space complexity O(n)
