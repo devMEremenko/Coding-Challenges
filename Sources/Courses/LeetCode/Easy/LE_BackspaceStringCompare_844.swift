@@ -15,13 +15,10 @@ class LE_BackspaceStringCompare_844: XCTestCase {
     /// https://leetcode.com/problems/backspace-string-compare/
     
     func test() {
-        
+        /// TODO:
     }
 }
 
 extension LE_BackspaceStringCompare_844 {
     
-    func backspaceCompare(_ s: String, _ t: String) -> Bool {
-        
-    }
 }
