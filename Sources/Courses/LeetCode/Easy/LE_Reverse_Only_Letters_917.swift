@@ -59,7 +59,7 @@ extension LE_Reverse_Only_Letters_917 {
     func reverseOnlyLetters_v2(_ s: String) -> String {
         
         let set = CharacterSet.letters
-        var indices = Array(s.indices)
+        let indices = Array(s.indices)
         var result = ""
         result.reserveCapacity(indices.count)
         var right = indices.count - 1
