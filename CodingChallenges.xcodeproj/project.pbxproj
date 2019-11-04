@@ -419,8 +419,8 @@
 		917FB5B2213DC25800908162 /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				B56C204D2305455700B89345 /* Real */,
 				917FB5B3213DC2A100908162 /* LeetCode */,
-				911735B6215AD40400A262E3 /* HackerRank */,
 				919440882172133B00040079 /* Pramp */,
 				916B88A920BD7BE600BA92DF /* Stepik */,
 				91B61D7C20DA5F3A0026809E /* MyCodeSchool */,
@@ -624,6 +624,15 @@
 			path = Repetition;
 			sourceTree = "<group>";
 		};
+		B56C204D2305455700B89345 /* Real */ = {
+			isa = PBXGroup;
+			children = (
+				911735B6215AD40400A262E3 /* HackerRank */,
+				B56C204B2305452800B89345 /* RI_MoveZerosToRight.swift */,
+			);
+			path = Real;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -769,6 +778,7 @@
 				9175BC7E207F63E800934B4B /* ReverseInteger_7.swift in Sources */,
 				B502296B21CC3AB2005F66C1 /* Successor_4_6.swift in Sources */,
 				B5681F8822CF860800963355 /* LE_BackspaceStringCompare_844.swift in Sources */,
+				B513EB45235F4E800095A7A1 /* RingBufferWithCursor.swift in Sources */,
 				916B88AB20BD7C1700BA92DF /* FindFibonacciNumber.swift in Sources */,
 				B5DE669822077BAA008B9B1F /* CharacterSet+Ext.swift in Sources */,
 				91301ACA20ED2EBB003B4FC0 /* Merge.swift in Sources */,

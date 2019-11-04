@@ -15,22 +15,18 @@ class GoldmanSachsInterviewTest: XCTestCase {
 extension GoldmanSachsInterviewTest {
     
     func testEasyTask1() {
-        
         XCTAssert(differentTeams(skills: "pcmbz") == 1)
     }
     
     func testEasyTask2() {
-        
         XCTAssert(differentTeams(skills: "pcmpp") == 0)
     }
     
     func testEasyTask3() {
-        
         XCTAssert(differentTeams(skills: "pcmpcmbbbzz") == 2)
     }
     
     func differentTeams(skills: String) -> Int {
-        
         var p = 0
         var c = 0
         var m = 0
@@ -55,28 +51,24 @@ extension GoldmanSachsInterviewTest {
 extension GoldmanSachsInterviewTest {
     
     func testMediumTask1() {
-        
         let arr = [7, 9, 5, 6, 3, 2]
         
         XCTAssert(maxDifferenceOddEven(a: arr) == 1)
     }
     
     func testMediumTask2() {
-        
         let arr = [2, 3, 10, 1, 4, 8, 1]
         
         XCTAssert(maxDifferenceOddEven(a: arr) == 7)
     }
     
     func testMediumTask3() {
-        
         let arr = [1, 2, 3, 6, 4]
         
         XCTAssert(maxDifferenceOddEven(a: arr) == 5)
     }
     
     func maxDifferenceOddEven(a: [Int]) -> Int {
-        
         guard a.count > 1 else { return 0 }
         
         var maxDiff = 0
