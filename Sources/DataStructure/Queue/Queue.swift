@@ -11,9 +11,7 @@ import XCTest
 class QueueTest: XCTestCase {
     
     func test() {
-        
-        var values = [1, 3, 5, 1, 8, 5, 3]
-        
+        let values = [1, 3, 5, 1, 8, 5, 3]
         let queue = Queue<Int>()
         
         for item in values {
