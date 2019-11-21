@@ -82,6 +82,7 @@
 		B54AD55F21DA713300CB6CCC /* BSTSequences_4_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54AD55E21DA713300CB6CCC /* BSTSequences_4_9.swift */; };
 		B54AD56121DA7FB100CB6CCC /* Optional+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54AD56021DA7FB100CB6CCC /* Optional+Ext.swift */; };
 		B54AD56321DBCEE000CB6CCC /* BinaryTreeInorderTraversal_94.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54AD56221DBCEE000CB6CCC /* BinaryTreeInorderTraversal_94.swift */; };
+		B555C5EA2387288800EC630A /* QuickUnion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B555C5E92387288800EC630A /* QuickUnion.swift */; };
 		B557C67021DD79910082D1A3 /* CourseraInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557C66F21DD79910082D1A3 /* CourseraInterviewTests.swift */; };
 		B5657E5121BEC93100838554 /* CheckBalanced_4_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5657E5021BEC93100838554 /* CheckBalanced_4_4.swift */; };
 		B5657E5321BEF4A100838554 /* ValidateBST_4_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5657E5221BEF4A100838554 /* ValidateBST_4_5.swift */; };
@@ -183,6 +184,7 @@
 		B54AD55E21DA713300CB6CCC /* BSTSequences_4_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTSequences_4_9.swift; sourceTree = "<group>"; };
 		B54AD56021DA7FB100CB6CCC /* Optional+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ext.swift"; sourceTree = "<group>"; };
 		B54AD56221DBCEE000CB6CCC /* BinaryTreeInorderTraversal_94.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeInorderTraversal_94.swift; sourceTree = "<group>"; };
+		B555C5E92387288800EC630A /* QuickUnion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickUnion.swift; sourceTree = "<group>"; };
 		B557C66F21DD79910082D1A3 /* CourseraInterviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseraInterviewTests.swift; sourceTree = "<group>"; };
 		B5657E5021BEC93100838554 /* CheckBalanced_4_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBalanced_4_4.swift; sourceTree = "<group>"; };
 		B5657E5221BEF4A100838554 /* ValidateBST_4_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateBST_4_5.swift; sourceTree = "<group>"; };
@@ -760,6 +762,7 @@
 				91AE066F2143DE6D0046A910 /* OneAway_1_5.swift in Sources */,
 				918D50992122261B00DEFB61 /* RingBuffer.swift in Sources */,
 				911735B8215AD45A00A262E3 /* GoldmanSachsInterviewTest.swift in Sources */,
+				B555C5EA2387288800EC630A /* QuickUnion.swift in Sources */,
 				91E1957C21611F3B006D4519 /* SortStack_3_5.swift in Sources */,
 				B5108C8C22CD5BEC00EA10EE /* R_PalindromeLinkedList.swift in Sources */,
 				91AE83AA2084CB9200DCADDF /* WeeklyContests80.swift in Sources */,
