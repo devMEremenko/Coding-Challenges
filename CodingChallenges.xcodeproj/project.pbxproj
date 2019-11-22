@@ -99,6 +99,7 @@
 		B5DE669A22077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE669922077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift */; };
 		B5DE66A122088871008B9B1F /* LE_Jewels_And_Stones_771.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE66A022088871008B9B1F /* LE_Jewels_And_Stones_771.swift */; };
 		B5DE66A322088BEF008B9B1F /* LE_Intersection_Of_Two_Arrays_349.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE66A222088BEF008B9B1F /* LE_Intersection_Of_Two_Arrays_349.swift */; };
+		B5E25B432374751500B33E4D /* QuickFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E25B422374751500B33E4D /* QuickFind.swift */; };
 		B5E5B0F7219CD04700614206 /* MinimalTree_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5B0F6219CD04700614206 /* MinimalTree_4_2.swift */; };
 		B5F7591F2251FC2400D4D727 /* BMTwoOppositeSigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F7591E2251FC2400D4D727 /* BMTwoOppositeSigns.swift */; };
 		B5F75925225220B700D4D727 /* BMNumberOfBitsInDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F75924225220B700D4D727 /* BMNumberOfBitsInDigit.swift */; };
@@ -199,6 +200,7 @@
 		B5DE669922077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_Longest_Valid_Parentheses_32.swift; sourceTree = "<group>"; };
 		B5DE66A022088871008B9B1F /* LE_Jewels_And_Stones_771.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_Jewels_And_Stones_771.swift; sourceTree = "<group>"; };
 		B5DE66A222088BEF008B9B1F /* LE_Intersection_Of_Two_Arrays_349.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_Intersection_Of_Two_Arrays_349.swift; sourceTree = "<group>"; };
+		B5E25B422374751500B33E4D /* QuickFind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFind.swift; sourceTree = "<group>"; };
 		B5E5B0F6219CD04700614206 /* MinimalTree_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalTree_4_2.swift; sourceTree = "<group>"; };
 		B5F7591E2251FC2400D4D727 /* BMTwoOppositeSigns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMTwoOppositeSigns.swift; sourceTree = "<group>"; };
 		B5F75924225220B700D4D727 /* BMNumberOfBitsInDigit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMNumberOfBitsInDigit.swift; sourceTree = "<group>"; };
@@ -791,6 +793,7 @@
 				91BC7F1A20F7731400FDB1AE /* Heap.swift in Sources */,
 				B5657E5321BEF4A100838554 /* ValidateBST_4_5.swift in Sources */,
 				91D9EF4D209204C800969B6D /* HashMap.swift in Sources */,
+				B5E25B432374751500B33E4D /* QuickFind.swift in Sources */,
 				B56C204C2305452800B89345 /* RI_MoveZerosToRight.swift in Sources */,
 				9193B18D209335E4000240A1 /* HashMap+OpenAddressing.swift in Sources */,
 				B5E5B0F7219CD04700614206 /* MinimalTree_4_2.swift in Sources */,
