@@ -20,6 +20,10 @@ class UnionFindTests: XCTestCase {
         XCTAssertTrue(sut.find(0, 1))
         XCTAssertTrue(sut.find(0, 2))
         XCTAssertTrue(sut.find(0, 3))
+        XCTAssertEqual(sut.depths[0], 4)
+        XCTAssertEqual(sut.depths[1], 1)
+        XCTAssertEqual(sut.depths[2], 1)
+        XCTAssertEqual(sut.depths[3], 1)
     }
     
     func test2() {
@@ -38,6 +42,27 @@ class UnionFindTests: XCTestCase {
         XCTAssertFalse(sut.find(0, 1))
         XCTAssertFalse(sut.find(0, 2))
         XCTAssertFalse(sut.find(0, 3))
+    }
+    
+    func test4() {
+        //      0
+        //    2  1
+        //  3
+        var sut = UnionFind(count: 4)
+        sut.union(2, 3)
+        sut.union(0, 1)
+        sut.union(1, 2)
+        XCTAssertTrue(sut.find(0, 2))
+        XCTAssertTrue(sut.find(1, 2))
+        XCTAssertTrue(sut.find(3, 2))
+        XCTAssertTrue(sut.find(0, 2))
+        XCTAssertTrue(sut.find(0, 3))
+        XCTAssertTrue(sut.find(1, 3))
+        
+        XCTAssertEqual(sut.depths[0], 4)
+        XCTAssertEqual(sut.depths[1], 1)
+        XCTAssertEqual(sut.depths[2], 2)
+        XCTAssertEqual(sut.depths[3], 1)
     }
     
     func test_find1() {
@@ -63,10 +88,10 @@ struct UnionFind {
     typealias Element = Int
     
     private(set) var items: [Element]
-    private var depths: [Int]
+    private(set) var depths: [Int]
     
     init(count: Int) {
-        depths = .init(repeating: 0, count: count)
+        depths = .init(repeating: 1, count: count)
         items = .init(repeating: 0, count: count)
         items.enumerated().forEach {
             items[$0.offset] = $0.offset
