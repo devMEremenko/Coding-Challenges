@@ -8,6 +8,10 @@
 This repository is mainly dedicated to coding challenges, algorithms, and data structures.<br/> 
 I use it as a sandbox and constantly update it with solved problems and learned tips and tricks.
 
+I use Swift and Python to write solutions.  
+- [Swift solutions](https://github.com/devMEremenko/Coding-Challenges/tree/master/Swift)
+- [Python solutions](https://github.com/devMEremenko/Coding-Challenges/tree/master/Python)
+
 ## Contents
 
 - [`Algorithms`](https://github.com/devMEremenko/LeetCode/tree/master/Sources/Algorithms)
