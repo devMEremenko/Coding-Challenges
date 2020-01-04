@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/merge-sorted-array/
 
 class Solution:
-
+    # Input:
     # [1, 2, 2, 3, 5, 6], m = 3
     # [2, 5, 6], n = 3
     
@@ -20,7 +20,7 @@ class Solution:
             return
         
         # Note: m and n are `number of steps`, not indices, 
-        #       that is why > is used rather than >=
+        #       that is why > is used instead of >=
         while n > 0 and m > 0:
             if nums1[m-1] <= nums2[n-1]:
                 nums1[m+n-1] = nums2[n-1]

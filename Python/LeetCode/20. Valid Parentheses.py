@@ -37,6 +37,7 @@ class Solution:
         return not stack
     
     def isValid(self, s: str) -> bool:
+        # Input:
         # [()]
         # ()[]{}
         # {()[]}

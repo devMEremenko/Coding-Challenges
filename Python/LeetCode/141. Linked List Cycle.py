@@ -8,6 +8,7 @@ class ListNode:
 
 class Solution:
     
+    # Input:
     # []
     # [1, 2]
     # [2, 2, 2]

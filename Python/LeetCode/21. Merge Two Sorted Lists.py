@@ -9,18 +9,18 @@ class ListNode:
 class Solution:
 
     # Input: 
-        #       1->2->4
-        #       1->3->4
-        # Output: 
-        #       1->1->2->3->4->4
-        
-        # Input: 
-        #       1->2->4
-        #       1->3
-        # Output: 
-        #       1->1->2->3->4
-        
-        # fake -> 1 -> 1 -> 2 ..
+    #       1->2->4
+    #       1->3->4
+    # Output: 
+    #       1->1->2->3->4->4
+    
+    # Input: 
+    #       1->2->4
+    #       1->3
+    # Output: 
+    #       1->1->2->3->4
+    
+    # fake -> 1 -> 1 -> 2 ..
 
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         head = ListNode(0)

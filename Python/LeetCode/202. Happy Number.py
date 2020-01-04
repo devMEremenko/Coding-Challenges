@@ -2,6 +2,7 @@
 
 class Solution:
 
+    # Input:
     # 19
     # slow: 82, 68
     # fast: 68, 1
