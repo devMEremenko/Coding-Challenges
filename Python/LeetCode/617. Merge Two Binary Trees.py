@@ -39,4 +39,3 @@ class Solution:
     def mergeTrees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
         # return self.solve_recursively_new_tree(t1, t2)
         return self.solve_iteratively(t1, t2)
-        
