@@ -5,10 +5,6 @@ from string import ascii_lowercase
 
 class Solution:
     
-    #Input:
-    # car
-    # rac
-    
     # Anagram: if 2 strings have the same amount of equal characters
     # Solution 1: Brute force O(n*n)
     # Solution 2: Use dictionary to map [char: count] O(n)
