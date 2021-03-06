@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2C534125F001C80082BC76 /* 1486. XOR Operation in an Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C534025F001C80082BC76 /* 1486. XOR Operation in an Array.swift */; };
 		9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102B41F2080D673004ABC77 /* AddTwoNumbers_2.swift */; };
 		9102B4222080F196004ABC77 /* PalindromeNumber_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */; };
 		91108B49217D949A003DA3BB /* RouteBetweenNodes_4_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91108B48217D949A003DA3BB /* RouteBetweenNodes_4_1.swift */; };
@@ -111,6 +112,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F2C534025F001C80082BC76 /* 1486. XOR Operation in an Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1486. XOR Operation in an Array.swift"; sourceTree = "<group>"; };
 		9102B41F2080D673004ABC77 /* AddTwoNumbers_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers_2.swift; sourceTree = "<group>"; };
 		9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber_9.swift; sourceTree = "<group>"; };
 		91108B48217D949A003DA3BB /* RouteBetweenNodes_4_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBetweenNodes_4_1.swift; sourceTree = "<group>"; };
@@ -417,6 +419,7 @@
 				B5681F8322CE55D100963355 /* LE_LetterCasePermutation_784.swift */,
 				B5681F8722CF860800963355 /* LE_BackspaceStringCompare_844.swift */,
 				B585E9B122D74C39009DE9CB /* LE_SearchInRotatedSortedArray.swift */,
+				1F2C534025F001C80082BC76 /* 1486. XOR Operation in an Array.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -794,6 +797,7 @@
 				91D7A3C821388A160072BE90 /* LinkedList.swift in Sources */,
 				B585E9B222D74C39009DE9CB /* LE_SearchInRotatedSortedArray.swift in Sources */,
 				919C8B2F20E1CAB3006EE57D /* PrintAllSubsets.swift in Sources */,
+				1F2C534125F001C80082BC76 /* 1486. XOR Operation in an Array.swift in Sources */,
 				B520951F22121BEF007F5028 /* BitManipulation.swift in Sources */,
 				B5DE669A22077C17008B9B1F /* LE_Longest_Valid_Parentheses_32.swift in Sources */,
 				91AE066D2143D9EB0046A910 /* BitSet.swift in Sources */,
