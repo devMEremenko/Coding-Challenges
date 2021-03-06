@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F2C534125F001C80082BC76 /* 1486. XOR Operation in an Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C534025F001C80082BC76 /* 1486. XOR Operation in an Array.swift */; };
+		1FFBFF1825F1246B000FEEE4 /* 997. Find the Town Judge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFBFF1725F1246B000FEEE4 /* 997. Find the Town Judge.swift */; };
 		9102B4202080D673004ABC77 /* AddTwoNumbers_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102B41F2080D673004ABC77 /* AddTwoNumbers_2.swift */; };
 		9102B4222080F196004ABC77 /* PalindromeNumber_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */; };
 		91108B49217D949A003DA3BB /* RouteBetweenNodes_4_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91108B48217D949A003DA3BB /* RouteBetweenNodes_4_1.swift */; };
@@ -113,6 +114,7 @@
 
 /* Begin PBXFileReference section */
 		1F2C534025F001C80082BC76 /* 1486. XOR Operation in an Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1486. XOR Operation in an Array.swift"; sourceTree = "<group>"; };
+		1FFBFF1725F1246B000FEEE4 /* 997. Find the Town Judge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "997. Find the Town Judge.swift"; sourceTree = "<group>"; };
 		9102B41F2080D673004ABC77 /* AddTwoNumbers_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoNumbers_2.swift; sourceTree = "<group>"; };
 		9102B4212080F196004ABC77 /* PalindromeNumber_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber_9.swift; sourceTree = "<group>"; };
 		91108B48217D949A003DA3BB /* RouteBetweenNodes_4_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBetweenNodes_4_1.swift; sourceTree = "<group>"; };
@@ -420,6 +422,7 @@
 				B5681F8722CF860800963355 /* LE_BackspaceStringCompare_844.swift */,
 				B585E9B122D74C39009DE9CB /* LE_SearchInRotatedSortedArray.swift */,
 				1F2C534025F001C80082BC76 /* 1486. XOR Operation in an Array.swift */,
+				1FFBFF1725F1246B000FEEE4 /* 997. Find the Town Judge.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -785,6 +788,7 @@
 				913BD9F6214C0B5600520710 /* DeleteMiddleNode_2_3.swift in Sources */,
 				B557C67021DD79910082D1A3 /* CourseraInterviewTests.swift in Sources */,
 				9139FA6E2088CA9200229150 /* String+Ext.swift in Sources */,
+				1FFBFF1825F1246B000FEEE4 /* 997. Find the Town Judge.swift in Sources */,
 				91AE066F2143DE6D0046A910 /* OneAway_1_5.swift in Sources */,
 				918D50992122261B00DEFB61 /* RingBuffer.swift in Sources */,
 				911735B8215AD45A00A262E3 /* GoldmanSachsInterviewTest.swift in Sources */,
